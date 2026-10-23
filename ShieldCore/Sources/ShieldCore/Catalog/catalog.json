@@ -1,0 +1,2053 @@
+{
+  "catalogVersion": 1,
+  "comment": "SPEC §5.1/§6. Compiled into the app; never downloaded. Copy lives in Strings/Localizable.xcstrings.",
+  "checks": [
+    {
+      "id": "os_patched",
+      "priority": "P0",
+      "tier": "amber",
+      "urgentTier": "red",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "measured",
+          "titleKey": "check.os_patched.ios.title",
+          "whyKey": "check.os_patched.ios.why",
+          "passKey": "check.os_patched.ios.pass",
+          "failKey": "check.os_patched.ios.fail",
+          "failUrgentKey": "check.os_patched.ios.failUrgent",
+          "noteKeys": [
+            "check.os_patched.ios.note.versions"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "step.ios.softwareUpdate",
+              "step.ios.softwareUpdate.install"
+            ],
+            "26": [
+              "step.ios.softwareUpdate",
+              "step.ios.softwareUpdate.install"
+            ],
+            "27": [
+              "step.ios.softwareUpdate",
+              "step.ios.softwareUpdate.install"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard",
+          "unknownKey": "check.os_patched.unknown"
+        },
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.os_patched.mac.title",
+          "whyKey": "check.os_patched.mac.why",
+          "passKey": "check.os_patched.mac.pass",
+          "failKey": "check.os_patched.mac.fail",
+          "failUrgentKey": "check.os_patched.mac.failUrgent",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install"
+            ],
+            "15": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install"
+            ],
+            "26": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install"
+            ],
+            "27": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install"
+            ]
+          },
+          "deepLink": "mac_software_update",
+          "supportURL": "https://support.apple.com/guide/mac-help/mchlpx1065/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard",
+          "unknownKey": "check.os_patched.unknown"
+        }
+      }
+    },
+    {
+      "id": "device_supported",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "measured",
+          "titleKey": "check.device_supported.ios.title",
+          "whyKey": "check.device_supported.ios.why",
+          "passKey": "check.device_supported.ios.pass",
+          "failKey": "check.device_supported.ios.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.device_supported.ios.step.talk"
+            ],
+            "26": [
+              "check.device_supported.ios.step.talk"
+            ],
+            "27": [
+              "check.device_supported.ios.step.talk"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.device_supported.mac.title",
+          "whyKey": "check.device_supported.mac.why",
+          "passKey": "check.device_supported.mac.pass",
+          "failKey": "check.device_supported.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.device_supported.mac.step.talk"
+            ],
+            "15": [
+              "check.device_supported.mac.step.talk"
+            ],
+            "26": [
+              "check.device_supported.mac.step.talk"
+            ],
+            "27": [
+              "check.device_supported.mac.step.talk"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "passcode_set",
+      "priority": "P0",
+      "tier": "red",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "measured",
+          "titleKey": "check.passcode_set.ios.title",
+          "whyKey": "check.passcode_set.ios.why",
+          "passKey": "check.passcode_set.ios.pass",
+          "failKey": "check.passcode_set.ios.fail",
+          "noteKeys": [
+            "check.passcode_set.ios.note.private"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "step.ios.faceIDPasscode",
+              "check.passcode_set.ios.step.turnOn"
+            ],
+            "26": [
+              "step.ios.faceIDPasscode",
+              "check.passcode_set.ios.step.turnOn"
+            ],
+            "27": [
+              "step.ios.faceIDPasscode",
+              "check.passcode_set.ios.step.turnOn"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/guide/iphone/set-a-passcode-iph14a867ae/ios",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "biometrics_enrolled",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "measured",
+          "titleKey": "check.biometrics_enrolled.ios.title",
+          "whyKey": "check.biometrics_enrolled.ios.why",
+          "passKey": "check.biometrics_enrolled.ios.pass",
+          "failKey": "check.biometrics_enrolled.ios.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "step.ios.faceIDPasscode",
+              "check.biometrics_enrolled.ios.step.setUp"
+            ],
+            "26": [
+              "step.ios.faceIDPasscode",
+              "check.biometrics_enrolled.ios.step.setUp"
+            ],
+            "27": [
+              "step.ios.faceIDPasscode",
+              "check.biometrics_enrolled.ios.step.setUp"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "app_build_fresh",
+      "priority": "P0",
+      "tier": "info",
+      "audience": "ben",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "measured",
+          "titleKey": "check.app_build_fresh.ios.title",
+          "whyKey": "check.app_build_fresh.ios.why",
+          "passKey": "check.app_build_fresh.ios.pass",
+          "failKey": "check.app_build_fresh.ios.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.app_build_fresh.ios.step.upload"
+            ],
+            "26": [
+              "check.app_build_fresh.ios.step.upload"
+            ],
+            "27": [
+              "check.app_build_fresh.ios.step.upload"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "os_update_stuck",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.os_update_stuck.mac.title",
+          "whyKey": "check.os_update_stuck.mac.why",
+          "passKey": "check.os_update_stuck.mac.pass",
+          "failKey": "check.os_update_stuck.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "step.callBen",
+              "step.mac.softwareUpdate"
+            ],
+            "15": [
+              "step.callBen",
+              "step.mac.softwareUpdate"
+            ],
+            "26": [
+              "step.callBen",
+              "step.mac.softwareUpdate"
+            ],
+            "27": [
+              "step.callBen",
+              "step.mac.softwareUpdate"
+            ]
+          },
+          "deepLink": "mac_software_update",
+          "supportURL": "https://support.apple.com/guide/mac-help/mchlpx1065/mac",
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "beta_catalog",
+      "priority": "P0",
+      "tier": "info",
+      "audience": "ben",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.beta_catalog.mac.title",
+          "whyKey": "check.beta_catalog.mac.why",
+          "passKey": "check.beta_catalog.mac.pass",
+          "failKey": "check.beta_catalog.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "step.mac.softwareUpdate",
+              "check.beta_catalog.mac.step.off"
+            ],
+            "15": [
+              "step.mac.softwareUpdate",
+              "check.beta_catalog.mac.step.off"
+            ],
+            "26": [
+              "step.mac.softwareUpdate",
+              "check.beta_catalog.mac.step.off"
+            ],
+            "27": [
+              "step.mac.softwareUpdate",
+              "check.beta_catalog.mac.step.off"
+            ]
+          },
+          "deepLink": "mac_software_update",
+          "supportURL": "https://support.apple.com/guide/mac-help/mchla7037245/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "auto_updates",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.auto_updates.title",
+          "whyKey": "check.auto_updates.why",
+          "passKey": "check.auto_updates.pass",
+          "failKey": "check.auto_updates.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.auto_updates.ios.step.automatic",
+              "check.auto_updates.ios.step.turnOn.v18"
+            ],
+            "26": [
+              "check.auto_updates.ios.step.automatic",
+              "check.auto_updates.ios.step.turnOn",
+              "check.auto_updates.ios.step.bsi"
+            ],
+            "27": [
+              "check.auto_updates.ios.step.automatic",
+              "check.auto_updates.ios.step.turnOn",
+              "check.auto_updates.ios.step.bsi"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/en-us/118575",
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.auto_updates.title",
+          "whyKey": "check.auto_updates.why",
+          "passKey": "check.auto_updates.pass",
+          "failKey": "check.auto_updates.fail",
+          "noteKeys": [
+            "check.auto_updates.mac.note.notPatched"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "step.mac.softwareUpdate",
+              "check.auto_updates.mac.step.info",
+              "check.auto_updates.mac.step.turnOn"
+            ],
+            "15": [
+              "step.mac.softwareUpdate",
+              "check.auto_updates.mac.step.info",
+              "check.auto_updates.mac.step.turnOn"
+            ],
+            "26": [
+              "step.mac.softwareUpdate",
+              "check.auto_updates.mac.step.info",
+              "check.auto_updates.mac.step.turnOn",
+              "check.auto_updates.mac.step.bsi"
+            ],
+            "27": [
+              "step.mac.softwareUpdate",
+              "check.auto_updates.mac.step.info",
+              "check.auto_updates.mac.step.turnOn",
+              "check.auto_updates.mac.step.bsi"
+            ]
+          },
+          "deepLink": "mac_software_update",
+          "supportURL": "https://support.apple.com/guide/mac-help/mchlpx1065/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "filevault",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.filevault.mac.title",
+          "whyKey": "check.filevault.mac.why",
+          "passKey": "check.filevault.mac.pass",
+          "failKey": "check.filevault.mac.fail",
+          "noteKeys": [
+            "check.filevault.mac.note.time"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "check.filevault.mac.step.open",
+              "check.filevault.mac.step.turnOn",
+              "check.filevault.mac.step.icloud"
+            ],
+            "15": [
+              "check.filevault.mac.step.open",
+              "check.filevault.mac.step.turnOn",
+              "check.filevault.mac.step.icloud"
+            ],
+            "26": [
+              "check.filevault.mac.step.open",
+              "check.filevault.mac.step.turnOn",
+              "check.filevault.mac.step.icloud"
+            ],
+            "27": [
+              "check.filevault.mac.step.open",
+              "check.filevault.mac.step.turnOn",
+              "check.filevault.mac.step.icloud"
+            ]
+          },
+          "deepLink": "mac_filevault",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh11785/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "gatekeeper",
+      "priority": "P0",
+      "tier": "red",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.gatekeeper.mac.title",
+          "whyKey": "check.gatekeeper.mac.why",
+          "passKey": "check.gatekeeper.mac.pass",
+          "failKey": "check.gatekeeper.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "step.callBen",
+              "check.gatekeeper.mac.step.where"
+            ],
+            "15": [
+              "step.callBen",
+              "check.gatekeeper.mac.step.where"
+            ],
+            "26": [
+              "step.callBen",
+              "check.gatekeeper.mac.step.where"
+            ],
+            "27": [
+              "step.callBen",
+              "check.gatekeeper.mac.step.where"
+            ]
+          },
+          "deepLink": "mac_security",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh40596/mac",
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "sip",
+      "priority": "P0",
+      "tier": "red",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.sip.mac.title",
+          "whyKey": "check.sip.mac.why",
+          "passKey": "check.sip.mac.pass",
+          "failKey": "check.sip.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "step.callBen"
+            ],
+            "15": [
+              "step.callBen"
+            ],
+            "26": [
+              "step.callBen"
+            ],
+            "27": [
+              "step.callBen"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "xprotect_current",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.xprotect_current.mac.title",
+          "whyKey": "check.xprotect_current.mac.why",
+          "passKey": "check.xprotect_current.mac.pass",
+          "failKey": "check.xprotect_current.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install",
+              "check.xprotect_current.mac.step.auto"
+            ],
+            "15": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install",
+              "check.xprotect_current.mac.step.auto"
+            ],
+            "26": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install",
+              "check.xprotect_current.mac.step.auto"
+            ],
+            "27": [
+              "step.mac.softwareUpdate",
+              "step.mac.softwareUpdate.install",
+              "check.xprotect_current.mac.step.auto"
+            ]
+          },
+          "deepLink": "mac_software_update",
+          "supportURL": "https://support.apple.com/guide/mac-help/mchlpx1065/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "screen_lock",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.screen_lock.mac.title",
+          "whyKey": "check.screen_lock.mac.why",
+          "passKey": "check.screen_lock.mac.pass",
+          "failKey": "check.screen_lock.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.screen_lock.mac.step.open",
+              "check.screen_lock.mac.step.set"
+            ],
+            "15": [
+              "check.screen_lock.mac.step.open",
+              "check.screen_lock.mac.step.set"
+            ],
+            "26": [
+              "check.screen_lock.mac.step.open",
+              "check.screen_lock.mac.step.set"
+            ],
+            "27": [
+              "check.screen_lock.mac.step.open",
+              "check.screen_lock.mac.step.set"
+            ]
+          },
+          "deepLink": "mac_lock_screen",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh11784/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "find_my",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.find_my.ios.title",
+          "whyKey": "check.find_my.ios.why",
+          "passKey": "check.find_my.ios.pass",
+          "failKey": "check.find_my.ios.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.find_my.ios.step.open",
+              "check.find_my.ios.step.turnOn"
+            ],
+            "26": [
+              "check.find_my.ios.step.open",
+              "check.find_my.ios.step.turnOn"
+            ],
+            "27": [
+              "check.find_my.ios.step.open",
+              "check.find_my.ios.step.turnOn"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/guide/iphone/add-your-iphone-iph9a847efc7/ios",
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.find_my.mac.title",
+          "whyKey": "check.find_my.mac.why",
+          "passKey": "check.find_my.mac.pass",
+          "failKey": "check.find_my.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.find_my.mac.step.open.v14",
+              "check.find_my.mac.step.turnOn",
+              "check.find_my.mac.step.admin"
+            ],
+            "15": [
+              "check.find_my.mac.step.open",
+              "check.find_my.mac.step.turnOn",
+              "check.find_my.mac.step.admin"
+            ],
+            "26": [
+              "check.find_my.mac.step.open",
+              "check.find_my.mac.step.turnOn",
+              "check.find_my.mac.step.admin"
+            ],
+            "27": [
+              "check.find_my.mac.step.open",
+              "check.find_my.mac.step.turnOn",
+              "check.find_my.mac.step.admin"
+            ]
+          },
+          "deepLink": "mac_icloud",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh36811/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "firewall",
+      "priority": "P0",
+      "tier": "yellow",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.firewall.mac.title",
+          "whyKey": "check.firewall.mac.why",
+          "passKey": "check.firewall.mac.pass",
+          "failKey": "check.firewall.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.firewall.mac.step.open",
+              "check.firewall.mac.step.turnOn"
+            ],
+            "15": [
+              "check.firewall.mac.step.open",
+              "check.firewall.mac.step.turnOn"
+            ],
+            "26": [
+              "check.firewall.mac.step.open",
+              "check.firewall.mac.step.turnOn"
+            ],
+            "27": [
+              "check.firewall.mac.step.open",
+              "check.firewall.mac.step.turnOn"
+            ]
+          },
+          "deepLink": "mac_firewall",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh34041/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "remote_access_off",
+      "priority": "P0",
+      "tier": "yellow",
+      "urgentTier": "red",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.remote_access_off.mac.title",
+          "whyKey": "check.remote_access_off.mac.why",
+          "passKey": "check.remote_access_off.mac.pass",
+          "failKey": "check.remote_access_off.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.remote_access_off.mac.step.open",
+              "check.remote_access_off.mac.step.turnOff",
+              "step.callBen"
+            ],
+            "15": [
+              "check.remote_access_off.mac.step.open",
+              "check.remote_access_off.mac.step.turnOff",
+              "step.callBen"
+            ],
+            "26": [
+              "check.remote_access_off.mac.step.open",
+              "check.remote_access_off.mac.step.turnOff",
+              "step.callBen"
+            ],
+            "27": [
+              "check.remote_access_off.mac.step.open",
+              "check.remote_access_off.mac.step.turnOff",
+              "step.callBen"
+            ]
+          },
+          "deepLink": "mac_sharing",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh11848/mac",
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "mdm_unexpected",
+      "priority": "P0",
+      "tier": "red",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.mdm_unexpected.mac.title",
+          "whyKey": "check.mdm_unexpected.mac.why",
+          "passKey": "check.mdm_unexpected.mac.pass",
+          "failKey": "check.mdm_unexpected.mac.fail",
+          "noteKeys": [
+            "check.mdm_unexpected.mac.note.dontChange"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "check.mdm_unexpected.mac.step.where.v14",
+              "step.callBen"
+            ],
+            "15": [
+              "check.mdm_unexpected.mac.step.where",
+              "step.callBen"
+            ],
+            "26": [
+              "check.mdm_unexpected.mac.step.where",
+              "step.callBen"
+            ],
+            "27": [
+              "check.mdm_unexpected.mac.step.where",
+              "step.callBen"
+            ]
+          },
+          "deepLink": "mac_profiles",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh35561/mac",
+          "paceGroup": null,
+          "callBen": true,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "time_machine",
+      "priority": "P1",
+      "tier": "info",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.time_machine.mac.title",
+          "whyKey": "check.time_machine.mac.why",
+          "passKey": "check.time_machine.mac.pass",
+          "failKey": "check.time_machine.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.time_machine.mac.step.open",
+              "check.time_machine.mac.step.add"
+            ],
+            "15": [
+              "check.time_machine.mac.step.open",
+              "check.time_machine.mac.step.add"
+            ],
+            "26": [
+              "check.time_machine.mac.step.open",
+              "check.time_machine.mac.step.add"
+            ],
+            "27": [
+              "check.time_machine.mac.step.open",
+              "check.time_machine.mac.step.add"
+            ]
+          },
+          "deepLink": "mac_time_machine",
+          "supportURL": "https://support.apple.com/guide/mac-help/mh11421/mac",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "persistence_new_item",
+      "priority": "P1",
+      "tier": "info",
+      "audience": "ben",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.persistence_new_item.mac.title",
+          "whyKey": "check.persistence_new_item.mac.why",
+          "passKey": "check.persistence_new_item.mac.pass",
+          "failKey": "check.persistence_new_item.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.persistence_new_item.mac.step.ben"
+            ],
+            "15": [
+              "check.persistence_new_item.mac.step.ben"
+            ],
+            "26": [
+              "check.persistence_new_item.mac.step.ben"
+            ],
+            "27": [
+              "check.persistence_new_item.mac.step.ben"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "chrome_ext_forced",
+      "priority": "P2",
+      "tier": "info",
+      "audience": "ben",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "measured",
+          "titleKey": "check.chrome_ext_forced.mac.title",
+          "whyKey": "check.chrome_ext_forced.mac.why",
+          "passKey": "check.chrome_ext_forced.mac.pass",
+          "failKey": "check.chrome_ext_forced.mac.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.chrome_ext_forced.mac.step.ben"
+            ],
+            "15": [
+              "check.chrome_ext_forced.mac.step.ben"
+            ],
+            "26": [
+              "check.chrome_ext_forced.mac.step.ben"
+            ],
+            "27": [
+              "check.chrome_ext_forced.mac.step.ben"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "lockdown",
+      "priority": "P0",
+      "tier": "info",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "optional",
+          "titleKey": "check.lockdown.mac.title",
+          "whyKey": "check.lockdown.mac.why",
+          "passKey": "check.optional.pass",
+          "failKey": "check.optional.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.lockdown.mac.step.where"
+            ],
+            "15": [
+              "check.lockdown.mac.step.where"
+            ],
+            "26": [
+              "check.lockdown.mac.step.where"
+            ],
+            "27": [
+              "check.lockdown.mac.step.where"
+            ]
+          },
+          "deepLink": "mac_lockdown_mode",
+          "supportURL": "https://support.apple.com/105120",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "adp",
+      "priority": "P0",
+      "tier": "info",
+      "audience": "family",
+      "platforms": [
+        "mac"
+      ],
+      "byPlatform": {
+        "mac": {
+          "kind": "optional",
+          "titleKey": "check.advanced_data_protection.title",
+          "whyKey": "check.advanced_data_protection.why",
+          "passKey": "check.optional.pass",
+          "failKey": "check.optional.fail",
+          "noteKeys": [
+            "check.advanced_data_protection.note.recovery"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "check.adp.mac.step.where"
+            ],
+            "15": [
+              "check.adp.mac.step.where"
+            ],
+            "26": [
+              "check.adp.mac.step.where"
+            ],
+            "27": [
+              "check.adp.mac.step.where"
+            ]
+          },
+          "deepLink": "mac_icloud",
+          "supportURL": "https://support.apple.com/108756",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      },
+      "sameAs": "advanced_data_protection"
+    },
+    {
+      "id": "stolen_device_protection",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.stolen_device_protection.ios.title",
+          "whyKey": "check.stolen_device_protection.ios.why",
+          "passKey": "check.stolen_device_protection.ios.pass",
+          "failKey": "check.stolen_device_protection.ios.fail",
+          "noteKeys": [
+            "check.stolen_device_protection.ios.note.maybeOn",
+            "check.stolen_device_protection.ios.note.delay"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "check.stolen_device_protection.ios.step.open",
+              "check.stolen_device_protection.ios.step.turnOn",
+              "check.stolen_device_protection.ios.step.always"
+            ],
+            "26": [
+              "check.stolen_device_protection.ios.step.open",
+              "check.stolen_device_protection.ios.step.turnOn",
+              "check.stolen_device_protection.ios.step.always"
+            ],
+            "27": [
+              "check.stolen_device_protection.ios.step.open",
+              "check.stolen_device_protection.ios.step.turnOn",
+              "check.stolen_device_protection.ios.step.always"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/en-us/120340",
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "recovery_contact",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.recovery_contact.title",
+          "whyKey": "check.recovery_contact.why",
+          "passKey": "check.recovery_contact.pass",
+          "failKey": "check.recovery_contact.fail",
+          "noteKeys": [
+            "check.recovery_contact.note.who",
+            "check.recovery_contact.note.contactNotKey"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "check.recovery_contact.ios.step.open.v18",
+              "check.recovery_contact.step.pick"
+            ],
+            "26": [
+              "check.recovery_contact.ios.step.open",
+              "check.recovery_contact.step.pick"
+            ],
+            "27": [
+              "check.recovery_contact.ios.step.open",
+              "check.recovery_contact.step.pick"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/en-us/102641",
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "selfCheck",
+          "titleKey": "check.recovery_contact.title",
+          "whyKey": "check.recovery_contact.why",
+          "passKey": "check.recovery_contact.pass",
+          "failKey": "check.recovery_contact.fail",
+          "noteKeys": [
+            "check.recovery_contact.note.who",
+            "check.recovery_contact.note.contactNotKey"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "check.recovery_contact.mac.step.open.v14",
+              "check.recovery_contact.step.pick.mac"
+            ],
+            "15": [
+              "check.recovery_contact.mac.step.open.v14",
+              "check.recovery_contact.step.pick.mac"
+            ],
+            "26": [
+              "check.recovery_contact.mac.step.open",
+              "check.recovery_contact.step.pick.mac"
+            ],
+            "27": [
+              "check.recovery_contact.mac.step.open",
+              "check.recovery_contact.step.pick.mac"
+            ]
+          },
+          "deepLink": "mac_apple_account",
+          "supportURL": "https://support.apple.com/en-us/102641",
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "screen_unknown",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.screen_unknown.ios.title",
+          "whyKey": "check.screen_unknown.ios.why",
+          "passKey": "check.screen_unknown.ios.pass",
+          "failKey": "check.screen_unknown.ios.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.screen_unknown.ios.step.calls.v18",
+              "check.screen_unknown.ios.step.texts.v18"
+            ],
+            "26": [
+              "check.screen_unknown.ios.step.calls",
+              "check.screen_unknown.ios.step.texts"
+            ],
+            "27": [
+              "check.screen_unknown.ios.step.calls",
+              "check.screen_unknown.ios.step.texts"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/en-us/111106",
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "family_code_word",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.family_code_word.title",
+          "whyKey": "check.family_code_word.why",
+          "passKey": "check.family_code_word.pass",
+          "failKey": "check.family_code_word.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ],
+            "26": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ],
+            "27": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "codeWord"
+        },
+        "mac": {
+          "kind": "selfCheck",
+          "titleKey": "check.family_code_word.title",
+          "whyKey": "check.family_code_word.why",
+          "passKey": "check.family_code_word.pass",
+          "failKey": "check.family_code_word.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ],
+            "15": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ],
+            "26": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ],
+            "27": [
+              "check.family_code_word.step.decide",
+              "check.family_code_word.step.use"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 1,
+          "callBen": false,
+          "answerStyle": "codeWord"
+        }
+      }
+    },
+    {
+      "id": "carrier_lock",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.carrier_lock.ios.title",
+          "whyKey": "check.carrier_lock.ios.why",
+          "passKey": "check.carrier_lock.ios.pass",
+          "failKey": "check.carrier_lock.ios.fail",
+          "noteKeys": [
+            "check.carrier_lock.ios.note.menus",
+            "check.carrier_lock.ios.note.pin"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "check.carrier_lock.ios.step.pick",
+              "check.carrier_lock.ios.step.follow"
+            ],
+            "26": [
+              "check.carrier_lock.ios.step.pick",
+              "check.carrier_lock.ios.step.follow"
+            ],
+            "27": [
+              "check.carrier_lock.ios.step.pick",
+              "check.carrier_lock.ios.step.follow"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "credit_freeze_equifax",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.credit_freeze_equifax.title",
+          "whyKey": "check.credit_freeze.why",
+          "passKey": "check.credit_freeze_equifax.pass",
+          "failKey": "check.credit_freeze_equifax.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.credit_freeze_equifax.step.open",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "26": [
+              "check.credit_freeze_equifax.step.open",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "27": [
+              "check.credit_freeze_equifax.step.open",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://www.equifax.com/personal/credit-report-services/credit-freeze/",
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "selfCheck",
+          "titleKey": "check.credit_freeze_equifax.title",
+          "whyKey": "check.credit_freeze.why",
+          "passKey": "check.credit_freeze_equifax.pass",
+          "failKey": "check.credit_freeze_equifax.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.credit_freeze_equifax.step.open.mac",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "15": [
+              "check.credit_freeze_equifax.step.open.mac",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "26": [
+              "check.credit_freeze_equifax.step.open.mac",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "27": [
+              "check.credit_freeze_equifax.step.open.mac",
+              "check.credit_freeze_equifax.step.freeze",
+              "check.credit_freeze.step.private"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://www.equifax.com/personal/credit-report-services/credit-freeze/",
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "credit_freeze_experian",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.credit_freeze_experian.title",
+          "whyKey": "check.credit_freeze.why",
+          "passKey": "check.credit_freeze_experian.pass",
+          "failKey": "check.credit_freeze_experian.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.credit_freeze_experian.step.open",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "26": [
+              "check.credit_freeze_experian.step.open",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "27": [
+              "check.credit_freeze_experian.step.open",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://www.experian.com/help/credit-freeze/",
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "selfCheck",
+          "titleKey": "check.credit_freeze_experian.title",
+          "whyKey": "check.credit_freeze.why",
+          "passKey": "check.credit_freeze_experian.pass",
+          "failKey": "check.credit_freeze_experian.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.credit_freeze_experian.step.open.mac",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "15": [
+              "check.credit_freeze_experian.step.open.mac",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "26": [
+              "check.credit_freeze_experian.step.open.mac",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "27": [
+              "check.credit_freeze_experian.step.open.mac",
+              "check.credit_freeze_experian.step.freeze",
+              "check.credit_freeze.step.private"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://www.experian.com/help/credit-freeze/",
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "credit_freeze_transunion",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.credit_freeze_transunion.title",
+          "whyKey": "check.credit_freeze.why",
+          "passKey": "check.credit_freeze_transunion.pass",
+          "failKey": "check.credit_freeze_transunion.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.credit_freeze_transunion.step.open",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "26": [
+              "check.credit_freeze_transunion.step.open",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "27": [
+              "check.credit_freeze_transunion.step.open",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://www.transunion.com/credit-freeze",
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "selfCheck",
+          "titleKey": "check.credit_freeze_transunion.title",
+          "whyKey": "check.credit_freeze.why",
+          "passKey": "check.credit_freeze_transunion.pass",
+          "failKey": "check.credit_freeze_transunion.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [
+              "check.credit_freeze_transunion.step.open.mac",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "15": [
+              "check.credit_freeze_transunion.step.open.mac",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "26": [
+              "check.credit_freeze_transunion.step.open.mac",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ],
+            "27": [
+              "check.credit_freeze_transunion.step.open.mac",
+              "check.credit_freeze_transunion.step.freeze",
+              "check.credit_freeze.step.private"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://www.transunion.com/credit-freeze",
+          "paceGroup": 2,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "passwords_alerts_clear",
+      "priority": "P1",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.passwords_alerts_clear.title",
+          "whyKey": "check.passwords_alerts_clear.ios.why",
+          "passKey": "check.passwords_alerts_clear.pass",
+          "failKey": "check.passwords_alerts_clear.fail",
+          "noteKeys": [
+            "check.passwords_alerts_clear.note.yesNo"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "check.passwords_alerts_clear.ios.step.open",
+              "check.passwords_alerts_clear.step.fix"
+            ],
+            "26": [
+              "check.passwords_alerts_clear.ios.step.open",
+              "check.passwords_alerts_clear.step.fix"
+            ],
+            "27": [
+              "check.passwords_alerts_clear.ios.step.open",
+              "check.passwords_alerts_clear.step.fix"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": "https://support.apple.com/guide/iphone/change-weak-or-compromised-passwords-iphd5d8daf4f/ios",
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "selfCheck",
+          "titleKey": "check.passwords_alerts_clear.title",
+          "whyKey": "check.passwords_alerts_clear.mac.why",
+          "passKey": "check.passwords_alerts_clear.pass",
+          "failKey": "check.passwords_alerts_clear.fail",
+          "noteKeys": [
+            "check.passwords_alerts_clear.note.yesNo"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "check.passwords_alerts_clear.mac.step.open.v14",
+              "check.passwords_alerts_clear.step.fix.mac"
+            ],
+            "15": [
+              "check.passwords_alerts_clear.mac.step.open",
+              "check.passwords_alerts_clear.step.fix.mac"
+            ],
+            "26": [
+              "check.passwords_alerts_clear.mac.step.open",
+              "check.passwords_alerts_clear.step.fix.mac"
+            ],
+            "27": [
+              "check.passwords_alerts_clear.mac.step.open",
+              "check.passwords_alerts_clear.step.fix.mac"
+            ]
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "fraud_website_warning",
+      "priority": "P1",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.fraud_website_warning.ios.title",
+          "whyKey": "check.fraud_website_warning.ios.why",
+          "passKey": "check.fraud_website_warning.ios.pass",
+          "failKey": "check.fraud_website_warning.ios.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [
+              "check.fraud_website_warning.ios.step.open"
+            ],
+            "26": [
+              "check.fraud_website_warning.ios.step.open"
+            ],
+            "27": [
+              "check.fraud_website_warning.ios.step.open"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/guide/iphone/browse-the-web-privately-iphb01fc3c85/ios",
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "safety_check_quarterly",
+      "priority": "P1",
+      "tier": "info",
+      "audience": "family",
+      "platforms": [
+        "ios"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "selfCheck",
+          "titleKey": "check.safety_check_quarterly.ios.title",
+          "whyKey": "check.safety_check_quarterly.ios.why",
+          "passKey": "check.safety_check_quarterly.ios.pass",
+          "failKey": "check.safety_check_quarterly.ios.fail",
+          "noteKeys": [
+            "check.safety_check_quarterly.ios.note.reset"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "check.safety_check_quarterly.ios.step.open",
+              "check.safety_check_quarterly.ios.step.follow"
+            ],
+            "26": [
+              "check.safety_check_quarterly.ios.step.open",
+              "check.safety_check_quarterly.ios.step.follow"
+            ],
+            "27": [
+              "check.safety_check_quarterly.ios.step.open",
+              "check.safety_check_quarterly.ios.step.follow"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/guide/iphone/manage-information-sharing-with-safety-check-iph42f0b2d53/ios",
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "advanced_data_protection",
+      "priority": "P2",
+      "tier": "info",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "optional",
+          "titleKey": "check.advanced_data_protection.title",
+          "whyKey": "check.advanced_data_protection.why",
+          "passKey": "check.optional.pass",
+          "failKey": "check.optional.fail",
+          "noteKeys": [
+            "check.advanced_data_protection.note.recovery"
+          ],
+          "stepsByOSMajor": {
+            "18": [
+              "check.advanced_data_protection.ios.step.where"
+            ],
+            "26": [
+              "check.advanced_data_protection.ios.step.where"
+            ],
+            "27": [
+              "check.advanced_data_protection.ios.step.where"
+            ]
+          },
+          "deepLink": "ios_settings_home",
+          "supportURL": "https://support.apple.com/108756",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "optional",
+          "titleKey": "check.advanced_data_protection.title",
+          "whyKey": "check.advanced_data_protection.why",
+          "passKey": "check.optional.pass",
+          "failKey": "check.optional.fail",
+          "noteKeys": [
+            "check.advanced_data_protection.note.recovery"
+          ],
+          "stepsByOSMajor": {
+            "14": [
+              "check.adp.mac.step.where"
+            ],
+            "15": [
+              "check.adp.mac.step.where"
+            ],
+            "26": [
+              "check.adp.mac.step.where"
+            ],
+            "27": [
+              "check.adp.mac.step.where"
+            ]
+          },
+          "deepLink": "mac_icloud",
+          "supportURL": "https://support.apple.com/108756",
+          "paceGroup": null,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "accounts_email",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_email.title",
+          "whyKey": "check.accounts_email.why",
+          "passKey": "check.accounts_email.pass",
+          "failKey": "check.accounts_email.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_email.title",
+          "whyKey": "check.accounts_email.why",
+          "passKey": "check.accounts_email.pass",
+          "failKey": "check.accounts_email.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [],
+            "15": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "accounts_money",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_money.title",
+          "whyKey": "check.accounts_money.why",
+          "passKey": "check.accounts_money.pass",
+          "failKey": "check.accounts_money.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_money.title",
+          "whyKey": "check.accounts_money.why",
+          "passKey": "check.accounts_money.pass",
+          "failKey": "check.accounts_money.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [],
+            "15": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "accounts_social",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_social.title",
+          "whyKey": "check.accounts_social.why",
+          "passKey": "check.accounts_social.pass",
+          "failKey": "check.accounts_social.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_social.title",
+          "whyKey": "check.accounts_social.why",
+          "passKey": "check.accounts_social.pass",
+          "failKey": "check.accounts_social.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [],
+            "15": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "accounts_shopping",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_shopping.title",
+          "whyKey": "check.accounts_shopping.why",
+          "passKey": "check.accounts_shopping.pass",
+          "failKey": "check.accounts_shopping.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_shopping.title",
+          "whyKey": "check.accounts_shopping.why",
+          "passKey": "check.accounts_shopping.pass",
+          "failKey": "check.accounts_shopping.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [],
+            "15": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "accounts_government",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_government.title",
+          "whyKey": "check.accounts_government.why",
+          "passKey": "check.accounts_government.pass",
+          "failKey": "check.accounts_government.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_government.title",
+          "whyKey": "check.accounts_government.why",
+          "passKey": "check.accounts_government.pass",
+          "failKey": "check.accounts_government.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [],
+            "15": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    },
+    {
+      "id": "accounts_health",
+      "priority": "P0",
+      "tier": "amber",
+      "audience": "family",
+      "platforms": [
+        "ios",
+        "mac"
+      ],
+      "byPlatform": {
+        "ios": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_health.title",
+          "whyKey": "check.accounts_health.why",
+          "passKey": "check.accounts_health.pass",
+          "failKey": "check.accounts_health.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "18": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        },
+        "mac": {
+          "kind": "accountRollup",
+          "titleKey": "check.accounts_health.title",
+          "whyKey": "check.accounts_health.why",
+          "passKey": "check.accounts_health.pass",
+          "failKey": "check.accounts_health.fail",
+          "noteKeys": [],
+          "stepsByOSMajor": {
+            "14": [],
+            "15": [],
+            "26": [],
+            "27": []
+          },
+          "deepLink": null,
+          "supportURL": null,
+          "paceGroup": 3,
+          "callBen": false,
+          "answerStyle": "standard"
+        }
+      }
+    }
+  ]
+}

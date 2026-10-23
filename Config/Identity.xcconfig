@@ -1,0 +1,9 @@
+// Identifiers for your copy of the apps: bundle IDs, the iCloud container, the App Group,
+// Keychain item names and the log subsystem all start with FS_ID_PREFIX.
+//
+// Don't edit this file for your own build. Copy the two lines below into
+// Config/Identity.local.xcconfig (git-ignored) and put your own values there.
+FS_ID_PREFIX = org.example.aegis
+DEVELOPMENT_TEAM =
+
+#include? "Identity.local.xcconfig"

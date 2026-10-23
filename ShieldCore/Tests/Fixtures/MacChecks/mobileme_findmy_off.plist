@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Synthetic. Signed in to iCloud, Find My Mac turned off (Enabled as a boolean false). -->
+<plist version="1.0">
+<dict>
+	<key>Accounts</key>
+	<array>
+		<dict>
+			<key>AccountID</key>
+			<string>someone@example.com</string>
+			<key>LoggedIn</key>
+			<true/>
+			<key>Services</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>FIND_MY_MAC</string>
+					<key>Enabled</key>
+					<false/>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>KEYCHAIN_SYNC</string>
+					<key>Enabled</key>
+					<true/>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

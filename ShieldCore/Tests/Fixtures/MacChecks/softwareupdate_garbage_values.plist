@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Values of the wrong type everywhere: every check must be unknown, never pass. -->
+<plist version="1.0">
+<dict>
+	<key>AutomaticallyInstallMacOSUpdates</key>
+	<string>sometimes</string>
+	<key>CatalogURL</key>
+	<integer>7</integer>
+	<key>DDMPersistedErrorKey</key>
+	<string>broken</string>
+	<key>LastResultCode</key>
+	<integer>0</integer>
+</dict>
+</plist>

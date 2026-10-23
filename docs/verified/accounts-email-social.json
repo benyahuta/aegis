@@ -1,0 +1,666 @@
+[
+  {
+    "id": "gmail",
+    "field": "checkup_url",
+    "spec": "https://myaccount.google.com/security-checkup",
+    "verified": "https://myaccount.google.com/security-checkup (official; g.co/securitycheckup redirects to the same page; signed-out visitors see /intro/security-checkup)",
+    "source": "https://myaccount.google.com/security-checkup",
+    "status": "correct"
+  },
+  {
+    "id": "gmail",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Google Account → Security → \"How you sign in to Google\" → 2-Step Verification (https://myaccount.google.com/signinoptions/twosv) and Passkeys and security keys. On iPhone: Gmail app → profile picture → Manage your Google Account → Security.",
+    "source": "https://support.google.com/accounts/answer/185839",
+    "status": "correct"
+  },
+  {
+    "id": "gmail",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Google Account → Security → \"How you sign in to Google\" → Recovery phone / Recovery email",
+    "source": "https://support.google.com/accounts/answer/183723",
+    "status": "correct"
+  },
+  {
+    "id": "gmail",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Google Account → Security → Your devices → Manage all devices (https://myaccount.google.com/device-activity)",
+    "source": "https://myaccount.google.com/device-activity",
+    "status": "correct"
+  },
+  {
+    "id": "gmail",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Google Account → Security → Your connections to third-party apps & services (https://myaccount.google.com/connections)",
+    "source": "https://support.google.com/accounts/answer/13533235",
+    "status": "correct"
+  },
+  {
+    "id": "gmail",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "Security alerts are always on and cannot be turned off; review them at Google Account → Security → Recent security activity (https://myaccount.google.com/notifications). Copy should say \"check\" not \"turn on\".",
+    "source": "https://myaccount.google.com/notifications",
+    "status": "corrected"
+  },
+  {
+    "id": "gmail",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "All 7 apply (alerts step = review, not toggle).",
+    "source": "https://myaccount.google.com/security",
+    "status": "correct"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "checkup_url",
+    "spec": "Settings → [your name] → Sign-In & Security (no URL; covered by Apple steps)",
+    "verified": "Settings → [your name] → Sign-In & Security (iOS 26). Apple has no web security checkup; web equivalent is https://account.apple.com → Sign-In and Security. Safety Check is separate (Settings → Privacy & Security → Safety Check).",
+    "source": "https://support.apple.com/guide/iphone/use-two-factor-authentication-iphd709a3c46/ios",
+    "status": "correct"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Settings → [your name] → Sign-In & Security → Two-Factor Authentication (on by default for nearly all accounts). Optional: Security Keys in the same screen.",
+    "source": "https://support.apple.com/en-us/102660",
+    "status": "correct"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Settings → [your name] → Sign-In & Security → Two-Factor Authentication → trusted phone numbers (add a second number not tied to this iPhone); Account Recovery / Recovery Contact in the same Sign-In & Security screen.",
+    "source": "https://support.apple.com/en-us/122621",
+    "status": "correct"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Settings → [your name] → scroll to the device list → tap an unknown device → Remove from Account.",
+    "source": "https://support.apple.com/guide/iphone/use-two-factor-authentication-iphd709a3c46/ios",
+    "status": "correct"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Settings → [your name] → Sign-In & Security → Sign in with Apple (apps using your Apple Account); app-specific passwords are managed at account.apple.com → Sign-In and Security → App-Specific Passwords.",
+    "source": "https://account.apple.com",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No toggle: Apple always sends sign-in approval prompts to trusted devices and email notices. Skip alerts step (or make it informational).",
+    "source": "https://support.apple.com/en-us/102660",
+    "status": "corrected"
+  },
+  {
+    "id": "icloud_mail",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw, recovery_info, sessions, third_party. Skip: alerts (automatic), checkup (no Apple checkup page; point to Safety Check instead).",
+    "source": "https://support.apple.com/en-us/102660",
+    "status": "corrected"
+  },
+  {
+    "id": "outlook",
+    "field": "checkup_url",
+    "spec": "https://account.microsoft.com/security",
+    "verified": "https://account.microsoft.com/security (official Microsoft account Security dashboard; redirects to sign-in). Microsoft does not call it a 'checkup'; copy should say \"Microsoft's security page\".",
+    "source": "https://support.microsoft.com/en-us/accounts-billing/security/how-to-use-two-step-verification-with-your-microsoft-account",
+    "status": "correct"
+  },
+  {
+    "id": "outlook",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "account.microsoft.com/security → Manage how I sign in → Additional security → Two-step verification → Turn on. Passkeys are added from the same 'Manage how I sign in' page (Microsoft accounts are now passkey-first for new accounts).",
+    "source": "https://support.microsoft.com/en-us/accounts-billing/security/how-to-use-two-step-verification-with-your-microsoft-account",
+    "status": "correct"
+  },
+  {
+    "id": "outlook",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "account.microsoft.com/security → Manage how I sign in → 'Ways to prove who you are' (phone/email). Also generate a recovery code here.",
+    "source": "https://support.microsoft.com/en-us/accounts-billing/manage/microsoft-account-security-info-verification-codes",
+    "status": "correct"
+  },
+  {
+    "id": "outlook",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Review: Security dashboard → Sign-in activity (https://account.live.com/activity). Sign out: Manage how I sign in → 'Sign out everywhere' (takes up to 24 h; not per-device).",
+    "source": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-sign-out-of-your-microsoft-account-everywhere",
+    "status": "correct"
+  },
+  {
+    "id": "outlook",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "'Apps and services that can access your data' at https://account.live.com/consent/Manage (linked from the Privacy/Security dashboards).",
+    "source": "https://account.live.com/consent/Manage",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "outlook",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No user toggle; Microsoft automatically emails/texts on unusual sign-in. Make alerts step informational or skip.",
+    "source": "https://support.microsoft.com/en-us/account-billing/what-is-the-recent-activity-page-23cf5556-4dbe-70da-82c8-bb3a8d8f8016",
+    "status": "corrected"
+  },
+  {
+    "id": "outlook",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw, recovery_info, sessions (sign out everywhere), third_party, checkup. Skip/informational: alerts.",
+    "source": "https://account.microsoft.com/security",
+    "status": "corrected"
+  },
+  {
+    "id": "yahoo",
+    "field": "checkup_url",
+    "spec": "https://login.yahoo.com/account/security",
+    "verified": "https://login.yahoo.com/myaccount/security (the spec URL still works but redirects here; hard-code the canonical one). Yahoo has no 'checkup' wizard; this is the Account Security page.",
+    "source": "https://help.yahoo.com/kb/SLN2080.html",
+    "status": "corrected"
+  },
+  {
+    "id": "yahoo",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Account Security → 'Ways of signing in' → 2-Step Verification (phone, authenticator app, security key); Passkeys section on the same page. In Yahoo Mail iOS app: profile → Manage accounts → Account info → Security settings.",
+    "source": "https://help.yahoo.com/kb/SLN5013.html",
+    "status": "correct"
+  },
+  {
+    "id": "yahoo",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "https://login.yahoo.com/myaccount/personalinfo → recovery phone and email (Account Info).",
+    "source": "https://help.yahoo.com/kb/SLN2080.html",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "yahoo",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "https://login.yahoo.com/myaccount/recentactivity (Recent activity → sign out of sessions you don't recognize).",
+    "source": "https://help.yahoo.com/kb/SLN2080.html",
+    "status": "correct"
+  },
+  {
+    "id": "yahoo",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Account Security → app passwords (delete unknown) and https://login.yahoo.com/myaccount/permissions (connected apps).",
+    "source": "https://help.yahoo.com/kb/SLN2080.html",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "yahoo",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No toggle; Yahoo automatically notifies on security changes. Informational only.",
+    "source": "https://help.yahoo.com/kb/SLN37259.html",
+    "status": "corrected"
+  },
+  {
+    "id": "yahoo",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw, recovery_info, sessions, third_party, checkup (security page). Skip: alerts.",
+    "source": "https://help.yahoo.com/kb/SLN2080.html",
+    "status": "corrected"
+  },
+  {
+    "id": "aol",
+    "field": "checkup_url",
+    "spec": "https://login.aol.com/account/security",
+    "verified": "https://login.aol.com/myaccount/security (spec URL redirects here; use canonical).",
+    "source": "https://help.aol.com/articles/secure-your-aol-account",
+    "status": "corrected"
+  },
+  {
+    "id": "aol",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Account Security page → 2-Step Verification (phone, authenticator app, security key).",
+    "source": "https://help.aol.com/articles/2-step-verification-stronger-than-your-password-alone",
+    "status": "correct"
+  },
+  {
+    "id": "aol",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Account Info → recovery phone/email (https://login.aol.com/myaccount/personalinfo).",
+    "source": "https://help.aol.com/articles/secure-your-aol-account",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "aol",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "https://login.aol.com/myaccount/recentactivity (Recent activity).",
+    "source": "https://help.aol.com/articles/secure-your-aol-account",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "aol",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Account Security → app passwords; remove ones you don't use.",
+    "source": "https://help.aol.com/articles/allow-apps-that-use-less-secure-sign-in",
+    "status": "correct"
+  },
+  {
+    "id": "aol",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No toggle; AOL automatically emails primary and backup addresses on security changes. Informational.",
+    "source": "https://help.aol.com/articles/understanding-security-changes-on-your-aol-account",
+    "status": "corrected"
+  },
+  {
+    "id": "aol",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Same as Yahoo: skip alerts toggle.",
+    "source": "https://help.aol.com/articles/secure-your-aol-account",
+    "status": "corrected"
+  },
+  {
+    "id": "facebook",
+    "field": "checkup_url",
+    "spec": "https://www.facebook.com/privacy/checkup",
+    "verified": "This is Privacy Checkup (official, resolves) - not Security Checkup. Security Checkup now lives in Accounts Center: Menu → Settings & privacy → Settings → Accounts Center → Password and security → Security Checkup. Recommended hard-coded URL: https://accountscenter.facebook.com/password_and_security (resolves). Facebook Help links Security Checkup at https://www.facebook.com/privacy/review?review_id=573933453011661 (could not confirm with an unauthenticated fetch).",
+    "source": "https://www.facebook.com/help/799880743466869",
+    "status": "corrected"
+  },
+  {
+    "id": "facebook",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Password and security → Two-factor authentication (also Passkey, rolled out 2025).",
+    "source": "https://about.fb.com/news/2025/06/introducing-passkeys-facebook-easier-sign-in/",
+    "status": "correct"
+  },
+  {
+    "id": "facebook",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Personal details → Contact info.",
+    "source": "https://www.facebook.com/help/213481848684090",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "facebook",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Password and security → Where you're logged in → Select devices to log out. (Some accounts show 'Meta Account settings' instead of Accounts Center.)",
+    "source": "https://www.facebook.com/help/211990645501187",
+    "status": "correct"
+  },
+  {
+    "id": "facebook",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Settings & privacy → Settings → Apps and websites (under 'Your activity'/'Permissions').",
+    "source": "https://www.facebook.com/help/213481848684090",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "facebook",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Password and security → Login alerts.",
+    "source": "https://www.facebook.com/help/213481848684090",
+    "status": "correct"
+  },
+  {
+    "id": "facebook",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "All 7 apply.",
+    "source": "https://www.facebook.com/help/213481848684090",
+    "status": "correct"
+  },
+  {
+    "id": "instagram",
+    "field": "checkup_url",
+    "spec": "in the app: Accounts Center → Password and security",
+    "verified": "Correct, but full path is Profile → ☰ → Accounts Center → Password and security → Security Checkup. Web: https://accountscenter.instagram.com/password_and_security/ (resolves).",
+    "source": "https://help.instagram.com/iphone-app/566810106808145",
+    "status": "corrected"
+  },
+  {
+    "id": "instagram",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Profile → ☰ → Accounts Center → Password and security → Two-factor authentication → pick account → authentication app (recommended), SMS, or security key.",
+    "source": "https://help.instagram.com/iphone-app/566810106808145",
+    "status": "correct"
+  },
+  {
+    "id": "instagram",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Personal details → Contact info.",
+    "source": "https://help.instagram.com/1028697851146674/",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "instagram",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Password and security → Where you're logged in.",
+    "source": "https://help.instagram.com/2761108904184084",
+    "status": "correct"
+  },
+  {
+    "id": "instagram",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Profile → ☰ → Website permissions → Apps and websites (also check Accounts Center → Accounts for linked accounts you don't recognize).",
+    "source": "https://about.instagram.com/blog/announcements/keeping-instagram-safe-and-secure",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "instagram",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "Accounts Center → Password and security → Login alerts.",
+    "source": "https://about.instagram.com/blog/announcements/staying-safe-and-secure-on-instagram",
+    "status": "correct"
+  },
+  {
+    "id": "instagram",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "All 7 apply.",
+    "source": "https://help.instagram.com/iphone-app/566810106808145",
+    "status": "correct"
+  },
+  {
+    "id": "whatsapp",
+    "field": "checkup_url",
+    "spec": "in the app: Settings → Account → Two-step verification",
+    "verified": "Path correct, but as of Aug 2026 the two-step verification PIN is now a full password (letters, numbers, symbols) - copy must not say 'six-digit PIN'. Also add passkey: Settings → Account → Passkeys (multiple passkeys allowed). WhatsApp has no security checkup; skip checkup.",
+    "source": "https://blog.whatsapp.com/one-billion-people-are-now-protected-with-passkeys-on-whatsapp-plus-more-account-security-features",
+    "status": "corrected"
+  },
+  {
+    "id": "whatsapp",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Settings → Account → Two-step verification → Turn on (create password, add recovery email). Plus Settings → Account → Passkeys → Create passkey.",
+    "source": "https://about.fb.com/news/2026/08/new-account-security-features-for-whatsapp/",
+    "status": "correct"
+  },
+  {
+    "id": "whatsapp",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Recovery email inside Settings → Account → Two-step verification → Email address. Account is tied to the phone number, so keep the carrier PIN on (§6.3).",
+    "source": "https://faq.whatsapp.com/1278661612895630/",
+    "status": "correct"
+  },
+  {
+    "id": "whatsapp",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Settings → Linked Devices → tap device → Log Out.",
+    "source": "https://faq.whatsapp.com/834124628020911/?cms_platform=iphone",
+    "status": "correct"
+  },
+  {
+    "id": "whatsapp",
+    "field": "unique_pw",
+    "spec": "(not in spec)",
+    "verified": "No account password at login; the two-step password should be unique and saved in the Passwords app. Step applies to the two-step password.",
+    "source": "https://blog.whatsapp.com/one-billion-people-are-now-protected-with-passkeys-on-whatsapp-plus-more-account-security-features",
+    "status": "corrected"
+  },
+  {
+    "id": "whatsapp",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw (two-step password), recovery_info, sessions (Linked Devices). Skip: third_party, alerts, checkup.",
+    "source": "https://faq.whatsapp.com/1095301557782068/",
+    "status": "corrected"
+  },
+  {
+    "id": "x",
+    "field": "checkup_url",
+    "spec": "https://x.com/settings/security_and_account_access",
+    "verified": "https://x.com/settings/security_and_account_access (official; resolves to login). X has no checkup wizard; this is the Security and account access page.",
+    "source": "https://help.x.com/en/managing-your-account/two-factor-authentication",
+    "status": "correct"
+  },
+  {
+    "id": "x",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Security and account access → Security → Two-factor authentication (authentication app or security key; SMS is X Premium only). Passkey: same Security screen → Additional password protection → Passkey.",
+    "source": "https://help.x.com/en/managing-your-account/how-to-use-passkey",
+    "status": "correct"
+  },
+  {
+    "id": "x",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Your account → Account information → Phone / Email.",
+    "source": "https://help.x.com/en/managing-your-account/two-factor-authentication",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "x",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Security and account access → Apps and sessions → Sessions (https://x.com/settings/sessions).",
+    "source": "https://x.com/settings/sessions",
+    "status": "correct"
+  },
+  {
+    "id": "x",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Security and account access → Apps and sessions → Connected apps (https://x.com/settings/connected_apps).",
+    "source": "https://x.com/settings/connected_apps",
+    "status": "correct"
+  },
+  {
+    "id": "x",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No login-alert toggle; X emails on new logins automatically. Informational.",
+    "source": "https://help.x.com/en/managing-your-account/two-factor-authentication",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "x",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw, recovery_info, sessions, third_party, checkup (security page). Skip: alerts.",
+    "source": "https://help.x.com/en/managing-your-account/two-factor-authentication",
+    "status": "corrected"
+  },
+  {
+    "id": "tiktok",
+    "field": "checkup_url",
+    "spec": "in the app: Profile → ☰ → Settings and privacy → Security",
+    "verified": "Profile → ☰ → Settings and privacy → Security & permissions → Security checkup ('Security' label is now 'Security & permissions').",
+    "source": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-safety",
+    "status": "corrected"
+  },
+  {
+    "id": "tiktok",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Security & permissions → 2-step verification → choose at least two methods (phone, email, authenticator app). Passkey option appears in the same menu where available.",
+    "source": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-safety",
+    "status": "correct"
+  },
+  {
+    "id": "tiktok",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Account → Account information → Phone / Email.",
+    "source": "https://www.tiktok.com/support/faq_detail?id=7543897457344928262",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "tiktok",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Security & permissions → Manage devices.",
+    "source": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-safety",
+    "status": "correct"
+  },
+  {
+    "id": "tiktok",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Security & permissions → Security alerts (review, not a toggle).",
+    "source": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/avoid-fraudulent-message-attacks-on-tiktok",
+    "status": "corrected"
+  },
+  {
+    "id": "tiktok",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Settings and privacy → Security & permissions → Apps and services permissions.",
+    "source": "https://support.tiktok.com/en/account-and-privacy",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "tiktok",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "All 7 apply (alerts = review Security alerts).",
+    "source": "https://support.tiktok.com/en/safety-hc/account-and-user-safety/account-safety",
+    "status": "correct"
+  },
+  {
+    "id": "linkedin",
+    "field": "checkup_url",
+    "spec": "https://www.linkedin.com/mypreferences/d/categories/sign-in-and-security",
+    "verified": "https://www.linkedin.com/mypreferences/d/categories/sign-in-and-security (official; it is LinkedIn's canonical redirect target). No checkup wizard; this is the Sign in & security page.",
+    "source": "https://www.linkedin.com/help/linkedin/answer/a1381088/turn-two-step-verification-on-and-off",
+    "status": "correct"
+  },
+  {
+    "id": "linkedin",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Profile photo → Settings → Sign in & security → Two-step verification (authenticator app preferred, or SMS). Passkeys: Sign in & security → Passkeys.",
+    "source": "https://www.linkedin.com/help/linkedin/answer/a5946277",
+    "status": "correct"
+  },
+  {
+    "id": "linkedin",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Sign in & security → Email addresses / Phone numbers.",
+    "source": "https://www.linkedin.com/help/linkedin/answer/a1381088/turn-two-step-verification-on-and-off",
+    "status": "correct"
+  },
+  {
+    "id": "linkedin",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Sign in & security → Where you're signed in (https://www.linkedin.com/mypreferences/d/sessions) → Sign out.",
+    "source": "https://www.linkedin.com/mypreferences/d/sessions",
+    "status": "correct"
+  },
+  {
+    "id": "linkedin",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Settings → Data privacy → Permitted services (https://www.linkedin.com/mypreferences/d/permitted-services).",
+    "source": "https://www.linkedin.com/mypreferences/d/permitted-services",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "linkedin",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No login-alert toggle; LinkedIn emails on new sign-ins and sends in-app sign-in prompts when 2-step is on. Informational.",
+    "source": "https://www.linkedin.com/help/linkedin/answer/a1427042",
+    "status": "corrected"
+  },
+  {
+    "id": "linkedin",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw, recovery_info, sessions, third_party, checkup. Skip: alerts.",
+    "source": "https://www.linkedin.com/help/linkedin/answer/a1381088",
+    "status": "corrected"
+  },
+  {
+    "id": "snapchat",
+    "field": "checkup_url",
+    "spec": "in the app: Settings → Two-Factor Authentication",
+    "verified": "Profile → ⚙️ Settings → My Account → Two-Factor Authentication (the 'My Account' level was missing). No checkup wizard; web account page https://accounts.snapchat.com resolves.",
+    "source": "https://help.snapchat.com/hc/en-us/articles/7012304106644",
+    "status": "corrected"
+  },
+  {
+    "id": "snapchat",
+    "field": "2fa",
+    "spec": "(not in spec)",
+    "verified": "Settings → My Account → Two-Factor Authentication → Continue → SMS or authenticator app; Snapchat also recommends a passkey. Snapchat requires both a phone and email on file first.",
+    "source": "https://help.snapchat.com/hc/en-us/articles/7012304746644",
+    "status": "correct"
+  },
+  {
+    "id": "snapchat",
+    "field": "recovery_info",
+    "spec": "(not in spec)",
+    "verified": "Settings → My Account → Mobile Number / Email; save a Recovery Code under Two-Factor Authentication.",
+    "source": "https://help.snapchat.com/hc/en-us/articles/7012304746644",
+    "status": "correct"
+  },
+  {
+    "id": "snapchat",
+    "field": "sessions",
+    "spec": "(not in spec)",
+    "verified": "Settings → My Account → Session Management → X next to unknown sessions (web: accounts.snapchat.com → Session Management). Also Two-Factor Authentication → Forget Devices.",
+    "source": "https://help.snapchat.com/hc/en-us/articles/23515601788948",
+    "status": "correct"
+  },
+  {
+    "id": "snapchat",
+    "field": "third_party",
+    "spec": "(not in spec)",
+    "verified": "Settings → Privacy Controls → Connected Apps.",
+    "source": "https://values.snap.com/privacy/privacy-through-security",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "snapchat",
+    "field": "alerts",
+    "spec": "(not in spec)",
+    "verified": "No toggle; Snapchat sends sign-in alerts automatically. Informational.",
+    "source": "https://help.snapchat.com/hc/en-us/articles/45269894320404",
+    "status": "corrected"
+  },
+  {
+    "id": "snapchat",
+    "field": "steps",
+    "spec": "(not in spec)",
+    "verified": "Apply: 2fa, unique_pw, recovery_info, sessions, third_party. Skip: alerts (automatic), checkup (none).",
+    "source": "https://help.snapchat.com/hc/en-us/articles/7012304746644",
+    "status": "corrected"
+  }
+]

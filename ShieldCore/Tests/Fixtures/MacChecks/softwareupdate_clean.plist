@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- A healthy Mac: production catalog (no CatalogURL), auto updates on, no DDM errors. -->
+<plist version="1.0">
+<dict>
+	<key>AutomaticDownload</key>
+	<true/>
+	<key>AutomaticallyInstallMacOSUpdates</key>
+	<true/>
+	<key>CriticalUpdateInstall</key>
+	<true/>
+	<key>LastResultCode</key>
+	<integer>0</integer>
+</dict>
+</plist>

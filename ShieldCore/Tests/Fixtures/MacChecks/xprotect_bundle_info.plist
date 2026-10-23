@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Trimmed copy of XProtect.bundle/Contents/Info.plist from Ben's Mac on 2026-10-22 (version 5368). -->
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.XProtect</string>
+	<key>CFBundleShortVersionString</key>
+	<string>5368</string>
+	<key>CFBundleVersion</key>
+	<string>5368</string>
+</dict>
+</plist>

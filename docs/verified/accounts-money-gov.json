@@ -1,0 +1,186 @@
+[
+  {
+    "id": "paypal",
+    "field": "url",
+    "spec": "https://www.paypal.com/myaccount/settings/security",
+    "verified": "https://www.paypal.com/myaccount/security/ (spec URL still works: it redirects to sign-in with returnUri=/myaccount/security/; hard-code the canonical one)",
+    "source": "Live redirect check 2026-10-22 (curl -L) plus https://www.paypal.com/us/cshelp/article/what-is-2-step-verification-help167",
+    "status": "corrected"
+  },
+  {
+    "id": "paypal",
+    "field": "steps_2fa",
+    "spec": "7 generic steps; checkup opens the URL above",
+    "verified": "Settings (gear next to Log out) -> Security -> 2-step verification -> Set Up -> authenticator app or 'Text me a code'. PayPal help says to do this in a web browser, not the PayPal app. Passkeys are also offered on the same Security page.",
+    "source": "https://www.paypal.com/us/cshelp/article/what-is-2-step-verification-help167",
+    "status": "correct"
+  },
+  {
+    "id": "venmo",
+    "field": "in_app_path",
+    "spec": "in the app: Me -> Settings -> Security",
+    "verified": "Not confirmed as an in-app label. Official help confirms: app Me tab -> Settings (gear) -> Face ID & Passcode (under Preferences) for the app lock; and on the web, venmo.com -> Settings -> Security for remembered devices and sign-in sessions (account.venmo.com/settings/security). Venmo says all accounts already use multi-factor sign-in codes. Suggested copy: 'In the Venmo app: Me -> Settings (gear). Turn on Face ID & Passcode. Review Security / remembered devices.' Label: 'Menu names may differ a little.'",
+    "source": "https://help.venmo.com/cs/articles/login-security-vhel151 ; https://help.venmo.com/cs/articles/lost-or-stolen-phone-vhel242",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "zelle",
+    "field": "copy",
+    "spec": "Zelle lives inside your bank's app. Use the bank steps.",
+    "verified": "Correct. The standalone Zelle app stopped sending/receiving on 2025-04-01 (logins ended 2025-08-11); Zelle is used only through a bank or credit union app now.",
+    "source": "https://www.zelle.com/ (zellepay.com redirects here); news coverage 2025-04 e.g. https://abc17news.com/stacker-money/2025/04/23/zelle-drops-standalone-app-now-what/",
+    "status": "correct"
+  },
+  {
+    "id": "cash_app",
+    "field": "in_app_path",
+    "spec": "in the app: Profile -> Privacy & Security",
+    "verified": "Profile icon -> Security -> Security Lock (choose: opening the app, sending payments, or both; set a 4-digit Security Code). Older app versions label it 'Privacy & Security'. Web: cash.app/account -> Account -> Security -> Security Lock.",
+    "source": "https://cash.app/help/3120-enable-security-lock (current); https://cash.app/help/gb/en-us/1015-account-settings (older 'Privacy & Security' label); https://cash.app/security",
+    "status": "corrected"
+  },
+  {
+    "id": "brokerage",
+    "field": "copy",
+    "spec": "bank-style copy, plus 'Add a trusted contact to the account.'",
+    "verified": "Correct. FINRA Rule 4512 requires firms to ask for a Trusted Contact Person (18+). The contact can be called if the firm suspects exploitation or cannot reach the owner, and has no authority to trade or move money. Suggested extra line: 'A trusted contact can't move your money. The firm can only call them if something looks wrong.' Add it by calling the firm or in its app/site profile.",
+    "source": "https://www.finra.org/investors/insights/trusted-contact ; https://www.finra.org/rules-guidance/rulebooks/finra-rules/4512",
+    "status": "correct"
+  },
+  {
+    "id": "amazon",
+    "field": "url",
+    "spec": "https://www.amazon.com/a/settings/approval (Two-Step Verification)",
+    "verified": "https://www.amazon.com/a/settings/approval resolves (sends a signed-out user to Amazon sign-in, then the 2SV settings page). Path: Your Account -> Login & security -> Two-Step Verification (2SV) Settings -> Turn on / Get Started. A backup method (second phone or authenticator app) is required. Passkey is also offered under Login & security.",
+    "source": "Live check 2026-10-22; https://www.amazon.com/gp/help/customer/display.html?nodeId=TMmdiAyib3Uq4SCdLm",
+    "status": "correct"
+  },
+  {
+    "id": "carrier_lock.verizon",
+    "field": "path",
+    "spec": "My Verizon -> Account -> Security -> Number Lock and SIM Protection",
+    "verified": "My Verizon app -> Me tab -> Edit profile and settings -> Security section -> Number Lock (toggle each number) and SIM Protection (toggle each number -> Confirm). Account Owner/Manager only. Reps cannot turn SIM Protection off; 15-minute delay when turned off. Number Lock must be off to switch carriers.",
+    "source": "https://www.verizon.com/support/knowledge-base-309293/ (app); https://www.verizon.com/support/knowledge-base-309294/ (website)",
+    "status": "corrected"
+  },
+  {
+    "id": "carrier_lock.att",
+    "field": "path",
+    "spec": "myAT&T -> Profile -> Wireless Account Lock",
+    "verified": "The app is now named 'AT&T' (formerly myAT&T). Postpaid: Home tab -> Account icon (person) -> Wireless account lock -> Swipe to lock. Prepaid: choose number -> Profile & Settings -> Account Info & Preferences -> Wireless Account Lock -> Turn on (texted code). Needs primary or secondary account access; AT&T emails/texts when it is turned on or off.",
+    "source": "https://www.att.com/device-support/article/155671/at&t/app-myatt-ios-smartphone/ ; https://www.att.com/support/article/wireless/000102016/",
+    "status": "corrected"
+  },
+  {
+    "id": "carrier_lock.tmobile",
+    "field": "path",
+    "spec": "T-Life/account -> Profile -> Privacy & Security -> SIM Protection and Port-out Protection",
+    "verified": "SIM Protection (free, Postpaid): T-Life -> Manage tab (labeled Account in some versions) -> gear icon -> Security -> SIM Protection -> toggle account or lines -> Save Changes. Port Out Protection (free; Postpaid, Prepaid, Business, Metro) is an add-on, not a toggle: T-Life -> Manage -> See plans (My account) -> Manage add-ons -> pick line -> check Port Out Protection -> Agree & Submit; repeat for each line. Only the Primary Account Holder can remove either. Web (T-Mobile.com): Profile -> Security -> SIM Protection.",
+    "source": "https://www.t-mobile.com/support/plans-features/sim-protection/ ; https://www.t-mobile.com/support/plans-features/help-with-t-mobile-account-fraud (both bot-blocked to direct fetch; paths from T-Mobile's indexed page text)",
+    "status": "corrected"
+  },
+  {
+    "id": "carrier_lock.uscellular",
+    "field": "path",
+    "spec": "(not in spec; 'Other: Ask Ben.')",
+    "verified": "UScellular wireless was acquired by T-Mobile (closed 2025-08-01). Migrated customers manage their account in T-Life with a T-Mobile ID, so use the T-Mobile steps. For a not-yet-migrated account, no current UScellular lock path could be confirmed: keep 'Ask Ben.' Suggested copy: 'UScellular is now T-Mobile. If you use the T-Life app, follow the T-Mobile steps.'",
+    "source": "https://m.uscc.com/joining-t-mobile ; https://www.t-mobile.com/nextsteps",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "carrier_lock.visible",
+    "field": "path",
+    "spec": "(not in spec; 'Other: Ask Ben.')",
+    "verified": "Visible app or visible.com -> Dashboard -> Device details -> Line Lock & portout-PIN (tap the arrow) -> Lock. Blocks port-out PINs, carrier moves and new eSIM/SIM pairing. About 30 minutes delay after unlocking. Feature name: 'Line Lock'.",
+    "source": "https://www.visible.com/m/help/your-account/line-lock",
+    "status": "corrected"
+  },
+  {
+    "id": "carrier_lock.mint",
+    "field": "path",
+    "spec": "(not in spec; 'Other: Ask Ben.')",
+    "verified": "Mint Mobile app -> Account (bottom right) -> Security -> Number Lock -> toggle on. Web: my.mintmobile.com -> My Account -> My Profile & Security -> Number Lock. Mint recommends verifying your email under My Details first. Blocks new SIM activation, replacement SIMs and phone changes.",
+    "source": "https://www.mintmobile.com/help/what-is-number-lock/ (bot-blocked to direct fetch; steps from Mint's indexed page text)",
+    "status": "corrected"
+  },
+  {
+    "id": "carrier_lock.cricket",
+    "field": "path",
+    "spec": "(not in spec; 'Other: Ask Ben.')",
+    "verified": "myCricket app -> Settings -> Security -> Account Lock -> toggle on. Blocks SIM swaps (including upgrades) and port-outs, for all lines on the account. Single-line accounts must call Cricket Care (1-800-274-2538) to turn it off.",
+    "source": "https://www.cricketwireless.com/support/fraud-protection/account-lock",
+    "status": "corrected"
+  },
+  {
+    "id": "ssa",
+    "field": "url",
+    "spec": "https://www.ssa.gov/myaccount/ : 'Create your own account before a criminal does.'",
+    "verified": "URL correct and official (returns 403 to scripted clients, renders in browsers). Sign-in is only through Login.gov or ID.me since 2025-06-07; the old SSA username/password is gone. SSA says to pick Login.gov if unsure. You need an email, a phone and a photo ID. Suggested extra line: 'You'll sign in with Login.gov or ID.me. Ben can sit with you for this.'",
+    "source": "https://www.ssa.gov/myaccount/ ; https://www.ssa.gov/myaccount/creating-an-account.html",
+    "status": "correct"
+  },
+  {
+    "id": "irs_ip_pin",
+    "field": "url",
+    "spec": "https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin : 'Get an IP PIN. Keep it to yourself. Never type it into Family Shield.'",
+    "verified": "URL resolves (200). Short alias https://www.irs.gov/ippin redirects to it. The IRS page says to get it from your IRS Online Account (Profile -> IP PIN). Anyone with an SSN/ITIN can opt in. A new PIN is issued every calendar year. The IRS says it 'will never ask for your IP PIN'. Without an online account: Form 15227 (income limits) or an in-person Taxpayer Assistance Center visit. Suggested copy addition: 'You get a new one every year.'",
+    "source": "https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin (last reviewed 2026-08-04)",
+    "status": "correct"
+  },
+  {
+    "id": "credit_freeze_ftc",
+    "field": "url",
+    "spec": "https://consumer.ftc.gov/articles/what-know-about-credit-freezes-and-fraud-alerts",
+    "verified": "https://consumer.ftc.gov/articles/credit-freezes-and-fraud-alerts (the article now indexed under this title 'Credit Freezes and Fraud Alerts'; the spec slug still rendered the same article in one fetch but is not the indexed URL). Note: consumer.ftc.gov returns 404 to curl for every page including the homepage, so link-check.sh cannot validate it with plain curl.",
+    "source": "https://consumer.ftc.gov/articles/credit-freezes-and-fraud-alerts",
+    "status": "corrected"
+  },
+  {
+    "id": "credit_freeze_ftc",
+    "field": "claim",
+    "spec": "Link opens the FTC page, which lists the official bureau links",
+    "verified": "Inaccurate. For adult freezes the FTC article does not link to each bureau's freeze page. It says to contact all three bureaus and links to https://www.identitytheft.gov/#/CreditBureauContacts and the bureaus' general help pages. Recommend each credit_freeze_* item open its own bureau's free-freeze page directly (below), with the FTC article as an optional 'Learn more'. The FTC confirms freezes are free to place and lift, don't affect your credit score, and last until you lift them.",
+    "source": "https://consumer.ftc.gov/articles/credit-freezes-and-fraud-alerts",
+    "status": "corrected"
+  },
+  {
+    "id": "credit_freeze_equifax",
+    "field": "url",
+    "spec": "same (FTC page)",
+    "verified": "https://www.equifax.com/personal/credit-report-services/credit-freeze/ (200). 'Placing, temporarily lifting, or removing a security freeze is free.' Online via a free myEquifax account; phone (888) 298-0045. Equifax calls it a 'Security Freeze'; the paid 'Lock & Alert' is the thing to avoid.",
+    "source": "https://www.equifax.com/personal/credit-report-services/credit-freeze/",
+    "status": "corrected"
+  },
+  {
+    "id": "credit_freeze_experian",
+    "field": "url",
+    "spec": "same (FTC page)",
+    "verified": "https://www.experian.com/help/credit-freeze/ (200; the old /freeze/center.html redirects here). Heading 'Freeze your credit file for free'. Online with a free Experian account; phone 1-888-EXPERIAN (1-888-397-3742). The paid option to avoid is 'CreditLock' (part of a paid membership).",
+    "source": "https://www.experian.com/help/credit-freeze/",
+    "status": "corrected"
+  },
+  {
+    "id": "credit_freeze_transunion",
+    "field": "url",
+    "spec": "same (FTC page)",
+    "verified": "https://www.transunion.com/credit-freeze (official; returns 403 to scripted clients). Freezing, unfreezing and temporary lifts are free; online through the free TransUnion Service Center account; phone 800-916-8800 (from TransUnion's indexed page, not directly fetched). Avoid the paid lock/monitoring memberships offered on the same site (exact product name not verified).",
+    "source": "https://www.transunion.com/credit-freeze ; https://www.transunion.com/credit-freeze/credit-freeze-faq",
+    "status": "corrected"
+  },
+  {
+    "id": "credit_freeze_all",
+    "field": "copy",
+    "spec": "Choose the free freeze, not a paid lock.",
+    "verified": "Correct and matches all three bureaus. Suggest naming the paid product per bureau so it's recognizable: Equifax 'Lock & Alert', Experian 'CreditLock'; TransUnion's paid lock name was not verified, so say 'any paid lock or membership'. Note: a freeze must be placed at each bureau separately (FTC).",
+    "source": "https://consumer.ftc.gov/articles/credit-freezes-and-fraud-alerts ; bureau pages above",
+    "status": "correct"
+  },
+  {
+    "id": "link_check",
+    "field": "tooling",
+    "spec": "every URL is checked by tools/link-check.sh at build time",
+    "verified": "Plain curl gets errors from several official URLs that work in a browser: consumer.ftc.gov (404 on every page), www.ssa.gov/myaccount/ (403), www.transunion.com (403), paypal.com/myaccount (403 then sign-in redirect), t-mobile.com support (403), mintmobile.com (403). link-check.sh should send a Safari User-Agent, treat a 403 or a redirect to a known sign-in page as 'reachable', and keep a short allowlist that is verified by hand instead of failing the build.",
+    "source": "curl -L checks run 2026-10-22",
+    "status": "corrected"
+  }
+]

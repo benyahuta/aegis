@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Synthetic. An account with no FIND_MY_MAC entry and one FIND_MY_MAC entry missing Enabled
+     in a second account: undocumented shapes, so the answer must be unknown, not fail or pass. -->
+<plist version="1.0">
+<dict>
+	<key>Accounts</key>
+	<array>
+		<dict>
+			<key>Services</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>MESSAGES</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Services</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>FIND_MY_MAC</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

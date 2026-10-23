@@ -1,0 +1,14 @@
+.env*
+*.p8
+*.p12
+*.mobileprovision
+.insforge/
+xcuserdata/
+DerivedData/
+build/
+.build/
+.swiftpm/
+*.xcresult
+.DS_Store
+.claude/worktrees/
+Config/Identity.local.xcconfig

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Auto install off (integer form, as some MDM profiles write it); a recent DDM error with only 2 failures. -->
+<plist version="1.0">
+<dict>
+	<key>AutomaticallyInstallMacOSUpdates</key>
+	<integer>0</integer>
+	<key>CriticalUpdateInstall</key>
+	<true/>
+	<key>AutomaticCheckEnabled</key>
+	<true/>
+	<key>DDMPersistedErrorKey</key>
+	<dict>
+		<key>count</key>
+		<integer>2</integer>
+		<key>reason</key>
+		<string>Software update failed.</string>
+		<key>timestamp</key>
+		<string>2026-10-20T10:00:00Z</string>
+	</dict>
+</dict>
+</plist>

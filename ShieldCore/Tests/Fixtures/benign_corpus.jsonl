@@ -1,0 +1,148 @@
+{"id": "bank2fa-01", "category": "bank_2fa", "text": "Chase: Your one-time code is 418392. Don't share it with anyone. We'll never call or text you for it."}
+{"id": "bank2fa-02", "category": "bank_2fa", "text": "BofA: Your Bank of America code is 662190. Never share this code. We will NEVER call to ask for it."}
+{"id": "bank2fa-03", "category": "bank_2fa", "text": "Wells Fargo: Use code 503812 to complete your sign on. Do not share this code. Wells Fargo will never ask for it by phone. Msg & data rates may apply."}
+{"id": "bank2fa-04", "category": "bank_2fa", "text": "Capital One: Your temporary code is 8841. It expires in 10 minutes. Never share it. We'll never ask for this code."}
+{"id": "bank2fa-05", "category": "bank_2fa", "text": "American Express: 293004 is your verification code. Do not share this code with anyone, including Amex representatives."}
+{"id": "bank2fa-06", "category": "bank_2fa", "text": "Your Navy Federal verification code is 739201. NFCU will never ask you for this code."}
+{"id": "bank2fa-07", "category": "bank_2fa", "text": "Citi: 552817 is your one-time passcode. Citi will never call you to ask for this code. Don't share it."}
+{"id": "bank2fa-08", "category": "bank_2fa", "text": "Zelle: Your Zelle verification code is 3381. Never share this code with anyone. Zelle and your bank will never call you to ask for it."}
+{"id": "bankalert-01", "category": "bank_alert", "text": "Chase: A $64.27 purchase at TRADER JOE'S #128 was made on your debit card ending 4421. Not you? Visit chase.com or the Chase app."}
+{"id": "bankalert-02", "category": "bank_alert", "text": "Wells Fargo: Your available balance in checking ...8813 is below $100.00 as of 10/22. Visit wellsfargo.com to view details."}
+{"id": "bankalert-03", "category": "bank_alert", "text": "Bank of America: Direct deposit of $1,842.16 posted to your account ending in 2209."}
+{"id": "bankalert-04", "category": "bank_alert", "text": "Chase Fraud Alert: Did you attempt a $219.99 purchase at BESTBUY.COM on card ending 4421? Reply YES or NO. To opt out reply STOP."}
+{"id": "apple-01", "category": "apple_genuine", "text": "Your Apple Account code is: 482915. Don't share it with anyone."}
+{"id": "apple-02", "category": "apple_genuine", "text": "Your Apple Account was used to sign in to iCloud via a web browser. Date and Time: October 21, 2026, 3:12 PM PDT. If you recently signed in, you can disregard this email. If you did not, go to appleid.apple.com to change your password."}
+{"id": "apple-03", "category": "apple_genuine", "text": "Receipt from Apple. iCloud+ with 200 GB of storage, $2.99 per month. Billed to Apple Card. If you have questions about your bill, visit support.apple.com/billing."}
+{"id": "apple-04", "category": "apple_genuine", "text": "Find My: Mom's iPhone is now sharing its location with you."}
+{"id": "apple-05", "category": "apple_genuine", "text": "Your iCloud storage is almost full. You have used 4.8 GB of 5 GB. To keep your photos backing up, go to Settings > [your name] > iCloud, or learn more at support.apple.com/icloud."}
+{"id": "google-01", "category": "google_genuine", "text": "G-482177 is your Google verification code."}
+{"id": "google-02", "category": "google_genuine", "text": "New sign-in on Mac. We noticed a new sign-in to your Google Account on a Mac device. If this was you, you don't need to do anything. If not, we'll help you secure your account. Check activity at myaccount.google.com/notifications"}
+{"id": "google-03", "category": "google_genuine", "text": "Your Google storage is 90% full. Get 100 GB for $1.99/month or free up space: one.google.com/storage"}
+{"id": "google-04", "category": "microsoft_genuine", "text": "Microsoft account: Use 8274 as your Microsoft account security code."}
+{"id": "appt-01", "category": "appointment", "text": "Reminder: You have an appointment with Dr. Patel at Bay Family Dental on Tue 10/27 at 2:30 PM. Reply C to confirm or call (415) 555-0172 to reschedule."}
+{"id": "appt-02", "category": "appointment", "text": "Kaiser Permanente: Your appointment is on Thu, Oct 29 at 9:40 AM with Sara Lin, MD at Oakland Medical Center. Please arrive 15 minutes early. To cancel, call 1-888-555-0105."}
+{"id": "appt-03", "category": "appointment", "text": "CVS Pharmacy: Your prescription is ready for pickup at 1201 Main St. Questions? Call 510-555-0188. Reply STOP to opt out."}
+{"id": "appt-04", "category": "appointment", "text": "Paws & Claws Vet: Buddy is due for his rabies vaccine. Book online at pawsandclawsvet.com or call 555-0131."}
+{"id": "appt-05", "category": "appointment", "text": "Hi Margaret, this is Studio 9 Salon confirming your haircut with Jenna tomorrow at 11 AM. Reply Y to confirm."}
+{"id": "appt-06", "category": "appointment", "text": "Toyota of Walnut Creek: Your Camry is ready for pickup. Total due $189.40. Questions? Call 925-555-0177."}
+{"id": "appt-07", "category": "appointment", "text": "Walgreens: It's time for your flu shot! Schedule at walgreens.com/flu or walk in today."}
+{"id": "appt-08", "category": "appointment", "text": "Sutter Health: Your test results are available. Sign in to My Health Online at mho.sutterhealth.org to view them."}
+{"id": "family-01", "category": "family_chat", "text": "Hi Mom! Running about 20 min late, traffic on 680 is a mess. Save me some pie!"}
+{"id": "family-02", "category": "family_chat", "text": "Dad can you send me that picture of the boat from last summer? Kids want to see it"}
+{"id": "family-03", "category": "family_chat", "text": "Grandma we're coming Sunday around 1. Lily made you a card at school \ud83d\udc95"}
+{"id": "family-04", "category": "family_chat", "text": "Thanks for the gift card, Grandpa! I'm going to use it for new soccer cleats."}
+{"id": "family-05", "category": "family_chat", "text": "Hey Mom, can you send me Aunt Ruth's lasagna recipe? The one with spinach"}
+{"id": "family-06", "category": "family_chat", "text": "Ben here. Did your iPhone update finish? If it asks for your passcode that's normal, just type it in yourself. Call me if anything looks weird."}
+{"id": "family-07", "category": "family_chat", "text": "I'll Zelle you $40 for the concert tickets tonight \ud83c\udfb6"}
+{"id": "family-08", "category": "family_chat", "text": "Mom, did you see the Chase commercial with the dancing dog? lol https://youtube.com/watch?v=dQw4w9WgXcQ"}
+{"id": "family-09", "category": "family_chat", "text": "Happy birthday Dad!!! \ud83c\udf82\ud83c\udf89 Love you so much. Dinner at Rosa's at 7?"}
+{"id": "family-10", "category": "family_chat", "text": "Did you get the photos I sent? They're in the shared album 'Tahoe 2026'"}
+{"id": "family-11", "category": "family_chat", "text": "Remember to bring the folding chairs to Uncle Joe's on Saturday. Also he said don't tell Aunt Carol about the surprise party!"}
+{"id": "family-12", "category": "family_chat", "text": "Mom the wifi password is on the fridge, it's the one that starts with Blue. Text me if it doesn't work."}
+{"id": "family-13", "category": "family_chat", "text": "Hey Dad, can you help me move the couch Saturday? I'll buy pizza"}
+{"id": "family-14", "category": "family_chat", "text": "Nana, the \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66 photo came out great! Printing a copy for you"}
+{"id": "family-15", "category": "family_chat", "text": "What's the garage code again? I'm locked out lol"}
+{"id": "family-16", "category": "family_chat", "text": "Mom, Ben put Family Shield on your iPad. If anything ever says to call a number or pay with gift cards, call me first!"}
+{"id": "family-17", "category": "family_chat", "text": "Can you pick up milk and eggs on the way home? Also the Apple TV remote is under the couch again"}
+{"id": "family-18", "category": "family_chat", "text": "\u041f\u0440\u0438\u0432\u0435\u0442, \u043c\u0430\u043c\u0430! \u041a\u0430\u043a \u0434\u0435\u043b\u0430? \u041f\u043e\u0437\u0432\u043e\u043d\u044e \u0432\u0435\u0447\u0435\u0440\u043e\u043c."}
+{"id": "delivery-01", "category": "delivery_genuine", "text": "USPS: Your item was delivered in or at the mailbox at 1:42 pm on October 22, 2026 in OAKLAND, CA 94610. Track: tools.usps.com/go/TrackConfirmAction?tLabels=9400111899223344556677"}
+{"id": "delivery-02", "category": "delivery_genuine", "text": "UPS: Your package is out for delivery today. Track at ups.com/track?tracknum=1Z999AA10123456784"}
+{"id": "delivery-03", "category": "delivery_genuine", "text": "FedEx: Your package will be delivered Thursday by 8pm. Manage delivery at fedex.com/fedextrack/?trknbr=771234567890"}
+{"id": "delivery-04", "category": "delivery_genuine", "text": "Amazon: Your package with 'Kitchen timer' was delivered. Shipped with UPS. See photo: amazon.com/progress-tracker"}
+{"id": "delivery-05", "category": "delivery_genuine", "text": "Your Amazon order of 'Reading glasses 3-pack' has shipped. Track with USPS: tools.usps.com/go/TrackConfirmAction?tLabels=9205590100130471234567"}
+{"id": "delivery-06", "category": "delivery_genuine", "text": "DHL: Your shipment 1234567890 is on its way and will arrive Friday. Track: dhl.com/us-en/home/tracking.html"}
+{"id": "delivery-07", "category": "delivery_genuine", "text": "Informed Delivery: You have 2 mailpieces arriving today. View them at informeddelivery.usps.com"}
+{"id": "delivery-08", "category": "delivery_genuine", "text": "UPS: Delivery attempted. We'll try again tomorrow between 10 AM and 2 PM. No action needed. ups.com/track"}
+{"id": "notice-01", "category": "utility_genuine", "text": "PG&E: Your bill of $142.18 is due on 11/05. View and pay at pge.com/myaccount. Reply STOP to unsubscribe."}
+{"id": "notice-02", "category": "toll_genuine", "text": "E-ZPass New York: Your statement is now available. Log in at e-zpassny.com to view your account activity."}
+{"id": "notice-03", "category": "benefits_genuine", "text": "Medi-Cal: It's time to renew your coverage. Look for your renewal packet in the mail or log in to BenefitsCal.com to complete it. Questions? Call your county office."}
+{"id": "notice-04", "category": "grocery_genuine", "text": "Stop & Shop: Your order is ready for pickup at Quincy, Bay 3. Pull into the pickup area and tap I'm Here in the app."}
+{"id": "notice-05", "category": "streaming_genuine", "text": "Netflix: A new device signed in to your account. If this was you, enjoy watching! If not, visit netflix.com/security."}
+{"id": "notice-06", "category": "school", "text": "Lincoln Elementary: Picture day is Thursday, Oct 29. Order online at lifetouch.com with code EVT8QX2T."}
+{"id": "notice-07", "category": "church", "text": "Grace Church: Thanksgiving potluck is Sunday after the 10am service. Sign up to bring a dish: tinyurl.com/gracepotluck"}
+{"id": "notice-08", "category": "benefits_genuine", "text": "Social Security: Your 2027 COLA notice is now in your my Social Security message center. Sign in at ssa.gov/myaccount."}
+{"id": "notice-09", "category": "retail_genuine", "text": "Costco: Your membership renews on 11/15/2026 for $65. Manage auto-renewal at costco.com/membership."}
+{"id": "notice-10", "category": "utility_genuine", "text": "Xfinity: Your bill is ready. Amount due: $89.95 by Nov 3. Pay at xfinity.com/pay or in the Xfinity app."}
+{"id": "notice-11", "category": "carrier_genuine", "text": "Verizon: Your device payment is complete! Thanks for being a customer since 2014. verizon.com/myverizon"}
+{"id": "notice-12", "category": "receipt", "text": "Your Lyft ride receipt: $18.42 charged to Visa ending 4421. Rate your driver in the app."}
+{"id": "notice-13", "category": "calendar", "text": "Google Calendar: Reminder. Pickleball with Ruth at 4:00 PM today at Memorial Park."}
+{"id": "notice-14", "category": "payment_genuine", "text": "PayPal: You sent $25.00 USD to Karen Miller. Details at paypal.com/activity"}
+{"id": "notice-15", "category": "payment_genuine", "text": "Venmo: Jake paid you $40.00 for 'concert tickets'."}
+{"id": "notice-16", "category": "family_chat", "text": "Ben shared a note with you: 'Family Rules'. Open it in Notes."}
+{"id": "notice-17", "category": "bank_genuine", "text": "Chase: Your new debit card is on the way and should arrive in 5 to 7 business days. Activate it in the Chase app when it arrives."}
+{"id": "notice-18", "category": "news", "text": "AARP: New FTC data shows toll-text scams are up. Learn how to spot them: aarp.org/money/scams-fraud"}
+{"id": "review-appt-01", "category": "appointment", "text": "To confirm your appointment, reply with your name and date of birth."}
+{"id": "review-appt-02", "category": "appointment", "text": "CVS Pharmacy: Your prescription is ready. We need your date of birth at pickup."}
+{"id": "review-appt-03", "category": "appointment", "text": "Reminder from Dr. Lee's office: please bring your insurance card and photo ID to verify your identity at check-in."}
+{"id": "review-appt-04", "category": "appointment", "text": "LabCorp: To check in for your appointment, please verify your identity at the kiosk."}
+{"id": "review-family-01", "category": "family_chat", "text": "Hey Chase, the party details are at evite.com/abc123"}
+{"id": "review-family-02", "category": "family_chat", "text": "Chase, grab the tickets at ticketmaster.com before they sell out"}
+{"id": "review-family-03", "category": "family_chat", "text": "Tickets for Citi Field are on ticketmaster.com"}
+{"id": "review-family-04", "category": "family_chat", "text": "The weather outlook for Sunday looks great, see weather.com"}
+{"id": "review-family-05", "category": "news", "text": "Here's a good article on the Medicare changes: forbes.com/sites/health/medicare"}
+{"id": "review-family-06", "category": "family_chat", "text": "I filed with the IRS using turbotax.com this year"}
+{"id": "review-family-07", "category": "news", "text": "Apple announced new iPhones, read it on theverge.com"}
+{"id": "review-family-08", "category": "family_chat", "text": "I sold my old phone on gazelle.com"}
+{"id": "review-family-09", "category": "family_chat", "text": "The sign-ups.com page for the race is live"}
+{"id": "review-family-10", "category": "family_chat", "text": "Hi Dad, the tennis-courts.com booking is confirmed for 9am"}
+{"id": "review-family-11", "category": "family_chat", "text": "Mom, I booked the Netflix documentary screening tickets at eventbrite.com/e/123"}
+{"id": "review-family-12", "category": "family_chat", "text": "Dad, the Costco pharmacy refill is ready. Coupons at coupons.com"}
+{"id": "review-family-13", "category": "family_chat", "text": "Download this app so we can video chat with the baby: FaceTime"}
+{"id": "review-family-14", "category": "family_chat", "text": "Download this app called WhatsApp so we can talk for free when I'm abroad"}
+{"id": "review-family-15", "category": "family_chat", "text": "Forget the directions, just use Google Maps"}
+{"id": "review-family-16", "category": "family_chat", "text": "Note to the AI team: lunch is at noon"}
+{"id": "review-family-17", "category": "family_chat", "text": "I accidentally sent you $20 on Venmo, can you send it back?"}
+{"id": "review-family-18", "category": "family_chat", "text": "Scratch off the silver strip to see your lottery number"}
+{"id": "review-family-19", "category": "family_chat", "text": "I'll open Terminal and check the logs"}
+{"id": "review-family-20", "category": "family_chat", "text": "Mom I accidentally paid you twice for dinner lol"}
+{"id": "review-family-21", "category": "family_chat", "text": "Here are the Tahoe photos: https://www.dropbox.com/s/abc/tahoe.zip"}
+{"id": "review-family-22", "category": "family_chat", "text": "Mom, I put the Costco list in https://docs.google.com/document/d/abc"}
+{"id": "review-family-23", "category": "family_chat", "text": "Grandpa, can you share your screen on FaceTime so I can show you how to add a contact?"}
+{"id": "review-family-24", "category": "family_chat", "text": "Let me know the code to the garage when you get a sec"}
+{"id": "review-family-25", "category": "family_chat", "text": "gr8 seeing u! c u at 3pm, luv u 4ever"}
+{"id": "review-family-26", "category": "family_chat", "text": "Take the coin jar to the Coinstar kiosk at Safeway"}
+{"id": "review-family-27", "category": "family_chat", "text": "Love you \u2764\ufe0f see you Sunday \ud83d\udc4d\ufe0f"}
+{"id": "review-delivery-01", "category": "delivery_genuine", "text": "Amazon: Your package shipped. Track it at ups.com/track?tracknum=1Z999AA10123456784"}
+{"id": "review2-near-01", "category": "retail_genuine", "text": "Your Carter Plumbing invoice is ready. Pay online at carter-plumbing.com. Thanks for your business!"}
+{"id": "review2-near-02", "category": "streaming_genuine", "text": "Watch Shark Week on discovery.com - your subscription includes it."}
+{"id": "review2-near-03", "category": "family_chat", "text": "Book club payment for the month: chapter-books.com/pay"}
+{"id": "review2-near-04", "category": "retail_genuine", "text": "Here's the window quote: window-world.com/quote - payment due at install"}
+{"id": "review2-near-05", "category": "bank_genuine", "text": "Get your trust account statement at trust-bank.com"}
+{"id": "review2-near-06", "category": "retail_genuine", "text": "Order the officer uniform: officer-supply.com/order"}
+{"id": "review2-own-01", "category": "microsoft_genuine", "text": "Microsoft Teams: Ben invited you to a meeting. Join at teams.cloud.microsoft/meet/123"}
+{"id": "review2-own-02", "category": "microsoft_genuine", "text": "Microsoft Forms: please fill out the survey at forms.cloud.microsoft/r/abc123"}
+{"id": "review2-own-03", "category": "microsoft_genuine", "text": "MSN Money: your account summary for October is at msn.com/money"}
+{"id": "review2-own-04", "category": "social_genuine", "text": "Facebook: A new login from Chrome on Windows. From: security@facebookmail.com"}
+{"id": "review2-own-05", "category": "delivery_genuine", "text": "The UPS Store: your package is ready for pickup. Details at theupsstore.com/tracking"}
+{"id": "review2-own-06", "category": "delivery_genuine", "text": "DHL Express: your shipment 1234567890 is out for delivery. Track at dhl-usa.com"}
+{"id": "review2-own-07", "category": "bank_genuine", "text": "Citi: Your statement is ready. Sign on at citibankonline.com"}
+{"id": "review2-own-08", "category": "retail_genuine", "text": "Capital One Shopping: you earned $5 in rewards at capitaloneshopping.com"}
+{"id": "review2-own-09", "category": "toll_genuine", "text": "Kansas Turnpike Authority: your K-TAG statement is ready. View your account at ksturnpike.com"}
+{"id": "review2-own-10", "category": "toll_genuine", "text": "NC Quick Pass: your toll invoice is available. Pay at ncquickpass.com"}
+{"id": "review2-own-11", "category": "toll_genuine", "text": "Tolls by Mail NY: your E-ZPass toll bill is available at tollsbymailny.com"}
+{"id": "review2-org-01", "category": "appointment", "text": "Norton Healthcare: your appointment is confirmed. Pay your bill at nortonhealthcare.org/pay"}
+{"id": "review2-org-02", "category": "benefits_genuine", "text": "Aetna: your Medicare plan documents are ready to view at aetnamedicare.com"}
+{"id": "review2-org-03", "category": "appointment", "text": "DMV Smiles Dental: appointment reminder for Tuesday. Confirm at dmvsmiles.com"}
+{"id": "review2-org-04", "category": "appointment", "text": "Reminder: your appointment at Norton Children's is Tuesday at 10am. nortonchildrens.com"}
+{"id": "review2-advice-01", "category": "news", "text": "Reminder from the FTC: scammers pretend to be the IRS and demand payment in gift cards or Bitcoin. The IRS will never call you. Learn more at consumer.ftc.gov"}
+{"id": "review2-advice-02", "category": "family_chat", "text": "Scammers often ask people to pay with gift cards or wire transfers. Real agencies never do. - Ben"}
+{"id": "review2-advice-03", "category": "family_chat", "text": "Scammers want you to pay with gift cards. Don't."}
+{"id": "review2-advice-04", "category": "family_chat", "text": "Mom, remember: scammers will tell you to pay with gift cards. Hang up and call me."}
+{"id": "review2-family-01", "category": "family_chat", "text": "Dad, your Amazon order (the heater) was delivered. Also I paid the water bill, we're square. Here's the pumpkin pie recipe: allrecipes.com/recipe/23439"}
+{"id": "review2-family-02", "category": "family_chat", "text": "Dad, your Amazon order arrived. Recipe here: allrecipes.com/recipe/23439"}
+{"id": "review2-family-03", "category": "family_chat", "text": "Hey Mom, can you pick up the Costco order tomorrow? Also here's the article about Grandpa's hometown: smalltownnews.net/story/1234"}
+{"id": "review2-family-04", "category": "family_chat", "text": "Mom, I paid the Verizon bill. Here's the hiking trail map: alltrails.com/trail/us/123"}
+{"id": "review2-family-05", "category": "family_chat", "text": "Ignore the earlier directions I sent, take exit 12 instead and park behind the church."}
+{"id": "review2-family-06", "category": "family_chat", "text": "Forget the previous instructions about the casserole, the oven should be 350 not 400."}
+{"id": "review2-family-07", "category": "family_chat", "text": "Please ignore the previous directions, the venue moved."}
+{"id": "review2-family-08", "category": "family_chat", "text": "Download this app so we can share the family calendar: cozi.com"}
+{"id": "review2-family-09", "category": "family_chat", "text": "Download this app to see the baby photos, it's called Tinybeans: tinybeans.com/app"}
+{"id": "review2-family-10", "category": "family_chat", "text": "Download this app, it has the kids' soccer schedule: teamsnap.com"}
+{"id": "review2-family-11", "category": "family_chat", "text": "Grandma, share your screen on FaceTime so I can see what's wrong with the printer."}
+{"id": "review2-family-12", "category": "family_chat", "text": "Mom, share your screen so I can help you find the setting."}
+{"id": "review2-family-13", "category": "family_chat", "text": "Hey Dad, let's FaceTime and you can share your screen so we can fix it together."}
+{"id": "review2-family-14", "category": "family_chat", "text": "Mom, I'll have $40 in cash ready for the babysitter, she will come by at 6."}
+{"id": "review2-family-15", "category": "family_chat", "text": "Can you grab a Target gift card for Emma's birthday? $25 is fine."}
+{"id": "review2-family-16", "category": "family_chat", "text": "Pick up two Starbucks gift cards for the teachers please"}
+{"id": "review2-family-17", "category": "family_chat", "text": "Grandpa, I put the beta of my school app on TestFlight, here's the link: testflight.apple.com/join/AbC123"}
+{"id": "review2-family-18", "category": "family_chat", "text": "Let's get café au lait and crêpes after church. Grandma's treat!"}

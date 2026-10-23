@@ -1,0 +1,234 @@
+[
+  {
+    "id": "_all",
+    "field": "url_macos27",
+    "spec": "All §6.2 x-apple.systempreferences URLs 'verified on macOS 26.5.1 [V]'",
+    "verified": "Every pane ID below exists on 26.5.1 with allowsXAppleSystemPreferencesURLScheme = true. No Apple or third-party source documents a pane-ID change in macOS 27, and Apple's macOS 27 guide uses the same pane names. macOS 27: could not verify locally (this Mac runs 26.5.1); no public list for 27 contradicts it. Re-run tools/deeplink-test.sh on a macOS 27 Mac.",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://github.com/jaywcjlove/SystemSettings-URLs-macOS ; https://github.com/bvanpeski/SystemPreferences",
+    "status": "could-not-verify"
+  },
+  {
+    "id": "os_patched",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.Software-Update-Settings.extension",
+    "verified": "x-apple.systempreferences:com.apple.Software-Update-Settings.extension (search group 'SoftwareUpdate'; legacy alias com.apple.preferences.softwareupdate)",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "os_patched",
+    "field": "written_path",
+    "spec": "(not given for Mac; legend only says a manual path is shown)",
+    "verified": "System Settings → General → Software Update",
+    "source": "https://support.apple.com/guide/mac-help/mchlpx1065/26/mac/26 ; https://support.apple.com/guide/mac-help/mchlpx1065/mac (27)",
+    "status": "corrected"
+  },
+  {
+    "id": "os_update_stuck",
+    "field": "fix_url",
+    "spec": "Software Update link",
+    "verified": "x-apple.systempreferences:com.apple.Software-Update-Settings.extension; path System Settings → General → Software Update",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://support.apple.com/guide/mac-help/mchlpx1065/26/mac/26 ; https://support.apple.com/guide/mac-help/mchlpx1065/mac (27)",
+    "status": "correct"
+  },
+  {
+    "id": "beta_catalog",
+    "field": "written_path",
+    "spec": "Software Update link (§14.1: General → Software Update → turn off Beta Updates)",
+    "verified": "System Settings → General → Software Update → click ⓘ next to Beta Updates → Off. The Beta Updates row shows only when the Mac is enrolled in a beta program.",
+    "source": "https://support.apple.com/guide/mac-help/mchla7037245/mac",
+    "status": "correct"
+  },
+  {
+    "id": "auto_updates",
+    "field": "written_path",
+    "spec": "Software Update link → \"Automatic Updates\"",
+    "verified": "System Settings → General → Software Update → click ⓘ next to Automatic Updates → turn on \"Download new updates when available\", \"Install macOS updates\" and \"Install Security Responses and system files\" → Done. Labels are the same in Tahoe 26 and macOS 27.",
+    "source": "https://support.apple.com/guide/mac-help/mchlpx1065/26/mac/26 ; https://support.apple.com/guide/mac-help/mchlpx1065/mac (27)",
+    "status": "corrected"
+  },
+  {
+    "id": "auto_updates",
+    "field": "written_path_bsi",
+    "spec": "(not in spec)",
+    "verified": "Optional extra (Tahoe 26.1+ and 27): System Settings → Privacy & Security → scroll to Background Security Improvements → turn on Automatically Install. A URL exists: x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?SecurityImprovements (search anchor present) or x-apple.systempreferences:com.apple.SecurityImprovements-Settings.extension (pane present). Neither was opened in this pass.",
+    "source": "https://support.apple.com/guide/mac-help/mchl44c4c70c/mac ; local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "corrected"
+  },
+  {
+    "id": "filevault",
+    "field": "fix_url",
+    "spec": "...PrivacySecurity.extension?FileVault",
+    "verified": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?FileVault (write it out in full; 'FileVault' anchor present; legacy alias com.apple.preference.security?FileVault)",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "filevault",
+    "field": "written_path",
+    "spec": "(not given)",
+    "verified": "System Settings → Privacy & Security → scroll down to FileVault → Turn On",
+    "source": "https://support.apple.com/guide/mac-help/mh11785/26.0/mac/26.0 ; https://support.apple.com/guide/mac-help/mh11785/mac (27)",
+    "status": "corrected"
+  },
+  {
+    "id": "filevault",
+    "field": "fail_copy",
+    "spec": "\"...Pick the option to unlock with your Apple Account.\"",
+    "verified": "Apple's option label is \"Allow my iCloud account to unlock my disk\" (or \"Set up my iCloud account to reset my password\" if not using iCloud). Suggested copy: \"...Pick the option that says Allow my iCloud account to unlock my disk.\" Avoid \"Create a recovery key and do not use my iCloud account.\"",
+    "source": "https://support.apple.com/guide/mac-help/mh11785/26.0/mac/26.0 ; https://support.apple.com/guide/mac-help/mh11785/mac",
+    "status": "corrected"
+  },
+  {
+    "id": "gatekeeper",
+    "field": "fix_url",
+    "spec": "...PrivacySecurity.extension?Security",
+    "verified": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?Security ('Security' anchor's search titles include 'Gatekeeper')",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "gatekeeper",
+    "field": "written_path",
+    "spec": "(Call Ben)",
+    "verified": "System Settings → Privacy & Security → Security → \"Allow applications from\" → App Store and Known Developers (Apple's wording; the on-screen menu shows \"App Store & Known Developers\"). If assessments were turned off from Terminal, the fix is Terminal-only, so keep \"Please call Ben\".",
+    "source": "https://support.apple.com/guide/mac-help/mh40596/mac",
+    "status": "correct"
+  },
+  {
+    "id": "sip",
+    "field": "fix_url",
+    "spec": "none (Call Ben)",
+    "verified": "none. Turning SIP back on needs macOS Recovery, which is not a family task.",
+    "source": "general Apple platform knowledge (no settings pane exists)",
+    "status": "correct"
+  },
+  {
+    "id": "xprotect_current",
+    "field": "fix_url",
+    "spec": "Software Update link",
+    "verified": "x-apple.systempreferences:com.apple.Software-Update-Settings.extension. XProtect comes in as a background update when \"Install Security Responses and system files\" is on.",
+    "source": "https://support.apple.com/guide/mac-help/mchlpx1065/26/mac/26 ; https://support.apple.com/guide/mac-help/mchlpx1065/mac (27)",
+    "status": "correct"
+  },
+  {
+    "id": "screen_lock",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension",
+    "verified": "x-apple.systempreferences:com.apple.Lock-Screen-Settings.extension. An optional anchor ?Password ('Require password to wake computer') exists in the search terms but was not click-tested.",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "screen_lock",
+    "field": "written_path",
+    "spec": "(not given; fail copy: 'Set your Mac to ask for your password right after it sleeps.')",
+    "verified": "System Settings → Lock Screen → \"Require password after screen saver begins or display is turned off\" → Immediately. Apple's guide confirms the path and row label for 26 and 27 but does not list the menu choices, so the word 'Immediately' was not confirmed from Apple's docs.",
+    "source": "https://support.apple.com/guide/mac-help/mh11784/26/mac/26 ; https://support.apple.com/guide/mac-help/mh11784/mac",
+    "status": "corrected"
+  },
+  {
+    "id": "find_my",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.systempreferences.AppleIDSettings?iCloud",
+    "verified": "x-apple.systempreferences:com.apple.systempreferences.AppleIDSettings?iCloud ('iCloud' anchor present; lands on iCloud per ux-older-adults.md §2.1)",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "find_my",
+    "field": "written_path",
+    "spec": "(not given in spec; family-playbook: System Settings > [name] > iCloud > Find My Mac [U: path])",
+    "verified": "System Settings → [your name] → iCloud → See All → Find My Mac → Turn On → Allow. It then asks for an administrator's name and password. Location Services must be on: System Settings → Privacy & Security → Location Services. The copy should say an admin password is needed, and suggest calling Ben if the person is not an admin.",
+    "source": "https://support.apple.com/guide/mac-help/mh36811/26/mac/26 ; https://support.apple.com/guide/mac-help/mh36811/mac (27)",
+    "status": "corrected"
+  },
+  {
+    "id": "firewall",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.Network-Settings.extension?Firewall (opens Network only; copy says 'then click Firewall')",
+    "verified": "Same. The 'Firewall' anchor is in the search terms but, per the earlier click test, lands on Network only. Keep the copy: System Settings → Network → Firewall → turn it on.",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://support.apple.com/guide/mac-help/mh34041/26/mac/26 ; https://support.apple.com/guide/mac-help/mh34041/mac",
+    "status": "correct"
+  },
+  {
+    "id": "remote_access_off",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.Sharing-Settings.extension",
+    "verified": "x-apple.systempreferences:com.apple.Sharing-Settings.extension. Optional anchors Services_RemoteLogin, Services_ScreenSharing, Services_PersonalFileSharing and Services_ARDService exist but were not click-tested.",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "remote_access_off",
+    "field": "written_path",
+    "spec": "(not given)",
+    "verified": "System Settings → General → Sharing → turn off Screen Sharing (port 5900), Remote Management (5900), Remote Login (22) and File Sharing (445/548). Name only the service whose port was open.",
+    "source": "https://support.apple.com/guide/mac-help/mh11848/mac ; https://support.apple.com/guide/mac-help/mchlp1066/mac",
+    "status": "corrected"
+  },
+  {
+    "id": "mdm_unexpected",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.Profiles-Settings.extension",
+    "verified": "x-apple.systempreferences:com.apple.Profiles-Settings.extension; path System Settings → General → Device Management",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://support.apple.com/guide/mac-help/mh35561/mac",
+    "status": "correct"
+  },
+  {
+    "id": "time_machine",
+    "field": "fix_url",
+    "spec": "x-apple.systempreferences:com.apple.Time-Machine-Settings.extension",
+    "verified": "x-apple.systempreferences:com.apple.Time-Machine-Settings.extension; path System Settings → General → Time Machine → Add Backup Disk",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://support.apple.com/guide/mac-help/mh11421/mac",
+    "status": "correct"
+  },
+  {
+    "id": "lockdown",
+    "field": "written_path",
+    "spec": "shown only as 'check yourself' link",
+    "verified": "x-apple.systempreferences:com.apple.settings.PrivacySecurity.extension?LockdownMode; path System Settings → Privacy & Security → Lockdown Mode → Turn On",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://support.apple.com/105120",
+    "status": "correct"
+  },
+  {
+    "id": "adp",
+    "field": "written_path",
+    "spec": "shown only as 'check yourself' link",
+    "verified": "System Settings → [your name] → iCloud → Advanced Data Protection → Turn On; link x-apple.systempreferences:com.apple.systempreferences.AppleIDSettings?iCloud",
+    "source": "https://support.apple.com/108756",
+    "status": "correct"
+  },
+  {
+    "id": "recovery_contact",
+    "field": "written_path_mac",
+    "spec": "Settings → [your name] → Sign-In & Security → Account Recovery → Add Recovery Contact → Ben",
+    "verified": "System Settings → [your name] → Sign-In & Security → Recovery Contacts → Add Recovery Contact → pick Ben (or Choose Someone Else) → Continue. The menu item is \"Recovery Contacts\", not \"Account Recovery\". It shows only when two-factor authentication is on.",
+    "source": "https://support.apple.com/102641 ; https://support.apple.com/guide/mac-help/mchlc7ba8f3e/26/mac/26 ; https://support.apple.com/guide/mac-help/mchlc7ba8f3e/mac (27)",
+    "status": "corrected"
+  },
+  {
+    "id": "recovery_contact",
+    "field": "written_path_ios_note",
+    "spec": "Settings → [your name] → Sign-In & Security → Account Recovery → Add Recovery Contact",
+    "verified": "Apple 102641 (current) for iPhone: Settings → [your name] → Sign-In & Security → Recovery Contacts → Add Recovery Contact. Passed on for the iOS verifier.",
+    "source": "https://support.apple.com/102641",
+    "status": "corrected"
+  },
+  {
+    "id": "recovery_contact",
+    "field": "fix_url_mac",
+    "spec": "AppleIDSettings",
+    "verified": "x-apple.systempreferences:com.apple.systempreferences.AppleIDSettings (lands on Apple Account; the person then clicks Sign-In & Security)",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80)",
+    "status": "correct"
+  },
+  {
+    "id": "login_item_approval",
+    "field": "fix_url",
+    "spec": "§10.2: x-apple.systempreferences:com.apple.LoginItems-Settings.extension",
+    "verified": "x-apple.systempreferences:com.apple.LoginItems-Settings.extension; path System Settings → General → Login Items & Extensions (Family Shield appears under 'Open at Login' / 'App Background Activity')",
+    "source": "local read-only: /System/Library/ExtensionKit/Extensions/*.appex Info.plist + en.lproj/*.searchTerms on macOS 26.5.1 (25F80) ; https://support.apple.com/guide/mac-help/mtusr003/mac",
+    "status": "correct"
+  }
+]

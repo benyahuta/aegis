@@ -1,0 +1,64 @@
+{
+  "_comment": "MacCheckParserTests fixtures (SPEC 13.1). 'captured' cases are verbatim outputs from Ben's Mac (macOS 26.5.1, 2026-10-22) run once as the user, no admin. Others are on/off/error/garbage variants. termination: exit | timeout | launch_failed | signal | not_allowed. expect: pass | fail | unknown.",
+  "cases": [
+    { "tool": "fdesetup_isactive", "name": "captured_on", "captured": true, "termination": "exit", "exit": 0, "stdout": "true\n", "stderr": "", "expect": "pass" },
+    { "tool": "fdesetup_isactive", "name": "off", "termination": "exit", "exit": 1, "stdout": "false\n", "stderr": "", "expect": "fail" },
+    { "tool": "fdesetup_isactive", "name": "error_exit_2", "termination": "exit", "exit": 2, "stdout": "", "stderr": "Error: Unable to get FileVault status.\n", "expect": "unknown" },
+    { "tool": "fdesetup_isactive", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "FileVault is On.\n", "stderr": "", "expect": "unknown" },
+    { "tool": "fdesetup_isactive", "name": "inconsistent_true_exit_1", "termination": "exit", "exit": 1, "stdout": "true\n", "stderr": "", "expect": "unknown" },
+    { "tool": "fdesetup_isactive", "name": "empty_exit_0", "termination": "exit", "exit": 0, "stdout": "", "stderr": "", "expect": "unknown" },
+    { "tool": "fdesetup_isactive", "name": "timeout", "termination": "timeout", "stdout": "true\n", "stderr": "", "expect": "unknown" },
+    { "tool": "fdesetup_isactive", "name": "launch_failed", "termination": "launch_failed", "stdout": "", "stderr": "", "expect": "unknown" },
+
+    { "tool": "spctl_status", "name": "captured_on", "captured": true, "termination": "exit", "exit": 0, "stdout": "assessments enabled\n", "stderr": "", "expect": "pass" },
+    { "tool": "spctl_status", "name": "off_exit_1", "termination": "exit", "exit": 1, "stdout": "assessments disabled\n", "stderr": "", "expect": "fail" },
+    { "tool": "spctl_status", "name": "off_exit_0", "termination": "exit", "exit": 0, "stdout": "assessments disabled\n", "stderr": "", "expect": "fail" },
+    { "tool": "spctl_status", "name": "error", "termination": "exit", "exit": 2, "stdout": "", "stderr": "spctl: unrecognized option\n", "expect": "unknown" },
+    { "tool": "spctl_status", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "assessments maybe\n", "stderr": "", "expect": "unknown" },
+    { "tool": "spctl_status", "name": "enabled_but_exit_1", "termination": "exit", "exit": 1, "stdout": "assessments enabled\n", "stderr": "", "expect": "unknown" },
+    { "tool": "spctl_status", "name": "signal", "termination": "signal", "exit": 9, "stdout": "", "stderr": "", "expect": "unknown" },
+
+    { "tool": "csrutil_status", "name": "captured_on", "captured": true, "termination": "exit", "exit": 0, "stdout": "System Integrity Protection status: enabled.\n", "stderr": "", "expect": "pass" },
+    { "tool": "csrutil_status", "name": "off", "termination": "exit", "exit": 0, "stdout": "System Integrity Protection status: disabled.\n", "stderr": "", "expect": "fail" },
+    { "tool": "csrutil_status", "name": "custom_config_partly_off", "termination": "exit", "exit": 0, "stdout": "System Integrity Protection status: unknown (Custom Configuration).\n\nConfiguration:\n\tApple Internal: disabled\n\tKext Signing: disabled\n\tFilesystem Protections: enabled\n\tDebugging Restrictions: enabled\n\tDTrace Restrictions: enabled\n\tNVRAM Protections: enabled\n\tBaseSystem Verification: enabled\n\tBoot-arg Restrictions: enabled\n\tKernel Integrity Protections: enabled\n\tAuthenticated Root Requirement: enabled\n\nThis is an unsupported configuration, likely to break in the future and leave your machine in an unknown state.\n", "stderr": "", "expect": "fail" },
+    { "tool": "csrutil_status", "name": "custom_config_nothing_off", "termination": "exit", "exit": 0, "stdout": "System Integrity Protection status: unknown (Custom Configuration).\n\nConfiguration:\n\tApple Internal: disabled\n\tKext Signing: enabled\n\tFilesystem Protections: enabled\n", "stderr": "", "expect": "unknown" },
+    { "tool": "csrutil_status", "name": "error", "termination": "exit", "exit": 1, "stdout": "", "stderr": "csrutil: failed to read status\n", "expect": "unknown" },
+    { "tool": "csrutil_status", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "usage: csrutil <command>\n", "stderr": "", "expect": "unknown" },
+
+    { "tool": "sysadminctl_screenlock", "name": "captured_immediate_on_stderr", "captured": true, "termination": "exit", "exit": 0, "stdout": "", "stderr": "2026-10-22 21:24:38.219 sysadminctl[7557:19628757] screenLock delay is immediate\n", "expect": "pass" },
+    { "tool": "sysadminctl_screenlock", "name": "five_seconds", "termination": "exit", "exit": 0, "stdout": "", "stderr": "2026-10-22 21:24:38.219 sysadminctl[7557:19628757] screenLock delay is 5 seconds\n", "expect": "pass" },
+    { "tool": "sysadminctl_screenlock", "name": "sixty_seconds", "termination": "exit", "exit": 0, "stdout": "", "stderr": "2026-10-22 21:24:38.219 sysadminctl[7557:19628757] screenLock delay is 60 seconds\n", "expect": "fail" },
+    { "tool": "sysadminctl_screenlock", "name": "off", "termination": "exit", "exit": 0, "stdout": "", "stderr": "2026-10-22 21:24:38.219 sysadminctl[7557:19628757] screenLock is off\n", "expect": "fail" },
+    { "tool": "sysadminctl_screenlock", "name": "moved_to_stdout", "termination": "exit", "exit": 0, "stdout": "screenLock delay is immediate\n", "stderr": "", "expect": "pass" },
+    { "tool": "sysadminctl_screenlock", "name": "error", "termination": "exit", "exit": 1, "stdout": "", "stderr": "2026-10-22 21:24:38.219 sysadminctl[7557:19628757] Operation is not permitted\n", "expect": "unknown" },
+    { "tool": "sysadminctl_screenlock", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "", "stderr": "2026-10-22 21:24:38.219 sysadminctl[7557:19628757] Usage: sysadminctl\n", "expect": "unknown" },
+    { "tool": "sysadminctl_screenlock", "name": "empty", "termination": "exit", "exit": 0, "stdout": "", "stderr": "", "expect": "unknown" },
+    { "tool": "sysadminctl_screenlock", "name": "timeout", "termination": "timeout", "stdout": "", "stderr": "", "expect": "unknown" },
+
+    { "tool": "socketfilterfw_globalstate", "name": "captured_off", "captured": true, "termination": "exit", "exit": 0, "stdout": "Firewall is disabled. (State = 0)\n", "stderr": "", "expect": "fail" },
+    { "tool": "socketfilterfw_globalstate", "name": "on", "termination": "exit", "exit": 0, "stdout": "Firewall is enabled. (State = 1)\n", "stderr": "", "expect": "pass" },
+    { "tool": "socketfilterfw_globalstate", "name": "block_all", "termination": "exit", "exit": 0, "stdout": "Firewall is blocking all non-essential incoming connections. (State = 2)\n", "stderr": "", "expect": "pass" },
+    { "tool": "socketfilterfw_globalstate", "name": "unknown_state", "termination": "exit", "exit": 0, "stdout": "Firewall is enabled. (State = 7)\n", "stderr": "", "expect": "unknown" },
+    { "tool": "socketfilterfw_globalstate", "name": "error", "termination": "exit", "exit": 1, "stdout": "", "stderr": "Error: could not contact firewall\n", "expect": "unknown" },
+    { "tool": "socketfilterfw_globalstate", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "socketfilterfw: usage\n", "stderr": "", "expect": "unknown" },
+
+    { "tool": "profiles_enrollment", "name": "captured_not_enrolled", "captured": true, "termination": "exit", "exit": 0, "stdout": "Enrolled via DEP: No\nMDM enrollment: No\n", "stderr": "", "expect": "pass" },
+    { "tool": "profiles_enrollment", "name": "enrolled_user_approved", "termination": "exit", "exit": 0, "stdout": "Enrolled via DEP: Yes\nMDM enrollment: Yes (User Approved)\nMDM server: https://mdm.example.com/checkin\n", "stderr": "", "expect": "fail" },
+    { "tool": "profiles_enrollment", "name": "enrolled_plain", "termination": "exit", "exit": 0, "stdout": "Enrolled via DEP: No\nMDM enrollment: Yes\n", "stderr": "", "expect": "fail" },
+    { "tool": "profiles_enrollment", "name": "error", "termination": "exit", "exit": 1, "stdout": "", "stderr": "profiles: error\n", "expect": "unknown" },
+    { "tool": "profiles_enrollment", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "Enrolled via DEP: No\n", "stderr": "", "expect": "unknown" },
+
+    { "tool": "tmutil_destinationinfo", "name": "captured_none", "captured": true, "termination": "exit", "exit": 0, "stdout": "tmutil: No destinations configured.\n", "stderr": "", "expect": "fail" },
+    { "tool": "tmutil_destinationinfo", "name": "one_destination", "termination": "exit", "exit": 0, "stdout": "====================================================\nName          : Backup\nKind          : Local\nMount Point   : /Volumes/Backup\nID            : 00000000-0000-0000-0000-000000000000\n", "stderr": "", "expect": "pass" },
+    { "tool": "tmutil_destinationinfo", "name": "error", "termination": "exit", "exit": 1, "stdout": "", "stderr": "tmutil: XPC error\n", "expect": "unknown" },
+    { "tool": "tmutil_destinationinfo", "name": "garbage", "termination": "exit", "exit": 0, "stdout": "====================================================\n", "stderr": "", "expect": "unknown" },
+
+    { "tool": "defaults_catalogurl", "name": "captured_beta", "captured": true, "termination": "exit", "exit": 0, "stdout": "https://swscan.apple.com/content/catalogs/others/index-26beta-26-15-14-13-12-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog.gz\n", "stderr": "", "expect": "fail" },
+    { "tool": "defaults_catalogurl", "name": "seed", "termination": "exit", "exit": 0, "stdout": "https://swscan.apple.com/content/catalogs/others/index-26seed-26-15-14.merged-1.sucatalog.gz\n", "stderr": "", "expect": "fail" },
+    { "tool": "defaults_catalogurl", "name": "production", "termination": "exit", "exit": 0, "stdout": "https://swscan.apple.com/content/catalogs/others/index-26-15-14-13.merged-1.sucatalog.gz\n", "stderr": "", "expect": "pass" },
+    { "tool": "defaults_catalogurl", "name": "captured_missing_key", "captured": true, "termination": "exit", "exit": 1, "stdout": "", "stderr": "2026-10-22 21:24:48.773 defaults[7621:19629059] \nThe domain/default pair of (/Library/Preferences/com.apple.SoftwareUpdate, NoSuchKeyXYZ) does not exist\n", "expect": "pass" },
+    { "tool": "defaults_catalogurl", "name": "error", "termination": "exit", "exit": 1, "stdout": "", "stderr": "defaults: permission denied\n", "expect": "unknown" },
+    { "tool": "defaults_catalogurl", "name": "empty", "termination": "exit", "exit": 0, "stdout": "\n", "stderr": "", "expect": "unknown" },
+    { "tool": "defaults_catalogurl", "name": "not_allowed", "termination": "not_allowed", "stdout": "", "stderr": "", "expect": "unknown" }
+  ]
+}

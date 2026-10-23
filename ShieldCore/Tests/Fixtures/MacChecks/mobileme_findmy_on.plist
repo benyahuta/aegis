@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Synthetic. Same shape as ~/Library/Preferences/MobileMeAccounts.plist on macOS 26.5.1 (structure only was inspected; every value here is fake). Enabled is an integer 1, as on the real file. -->
+<plist version="1.0">
+<dict>
+	<key>Accounts</key>
+	<array>
+		<dict>
+			<key>AccountDescription</key>
+			<string>iCloud</string>
+			<key>AccountID</key>
+			<string>someone@example.com</string>
+			<key>DisplayName</key>
+			<string>Test Person</string>
+			<key>LoggedIn</key>
+			<true/>
+			<key>Services</key>
+			<array>
+				<dict>
+					<key>Name</key>
+					<string>MOBILE_DOCUMENTS</string>
+					<key>Enabled</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>PHOTO_STREAM</string>
+				</dict>
+				<dict>
+					<key>Name</key>
+					<string>FIND_MY_MAC</string>
+					<key>Enabled</key>
+					<integer>1</integer>
+					<key>hostname</key>
+					<string>fmip.example.invalid</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

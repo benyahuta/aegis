@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7553CF54C17161534F4C82DD /* ShieldCore in Frameworks */ = {isa = PBXBuildFile; productRef = 34E3687501B45AB7DB793FC7 /* ShieldCore */; };
+		7E14DFF1976223BE96731F74 /* ShieldUI in Frameworks */ = {isa = PBXBuildFile; productRef = B091893DE0F2258B932B0741 /* ShieldUI */; };
+		692DFB5D596708611CF9B20A /* ShieldCore in Frameworks */ = {isa = PBXBuildFile; productRef = 75C565E2FDEC965D400BF518 /* ShieldCore */; };
+		E624138B874D33CF5F02C2ED /* ShieldUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3AEDD1186593E70A700BCA2C /* ShieldUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFBC14253787E9E658881A62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92797D8ADF320F853D54C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D0D4A5812341E1993E57E9E;
+			remoteInfo = ShieldiOS;
+		};
+		49619BBA086726E0DE330364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C92797D8ADF320F853D54C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06AA307EED9EA353C8FB7B5D;
+			remoteInfo = ShieldMac;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE6150A1C0F1D2E3F4A5B6C7 /* Identity.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Identity.xcconfig; sourceTree = "<group>"; };
+		029010C643F877778D987C07 /* Family Shield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Family Shield.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		873028A43211F760C8307C6A /* Family Shield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Family Shield.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8298CF228A625AB9C2B4D953 /* ShieldiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShieldiOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E52843F6073084FEED0AC5CD /* ShieldMacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShieldMacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5F29FFB13A5FE8B549B56442 /* Exceptions for "ShieldiOS" folder in "ShieldiOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				ShieldiOS.entitlements,
+			);
+			target = 1D0D4A5812341E1993E57E9E /* ShieldiOS */;
+		};
+		99702D9AE26C62264CD4E81F /* Exceptions for "ShieldMac" folder in "ShieldMac" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				ShieldMac.entitlements,
+			);
+			target = 06AA307EED9EA353C8FB7B5D /* ShieldMac */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		36AAAC035D338AC1D61BA52D /* ShieldiOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5F29FFB13A5FE8B549B56442 /* Exceptions for "ShieldiOS" folder in "ShieldiOS" target */,
+			);
+			path = ShieldiOS;
+			sourceTree = "<group>";
+		};
+		BC2F69C09CDE1E099396288D /* ShieldMac */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				99702D9AE26C62264CD4E81F /* Exceptions for "ShieldMac" folder in "ShieldMac" target */,
+			);
+			path = ShieldMac;
+			sourceTree = "<group>";
+		};
+		75994A927F349DCA0BDA963B /* ShieldiOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShieldiOSUITests;
+			sourceTree = "<group>";
+		};
+		BD1217CCB28B59B397746823 /* ShieldMacUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShieldMacUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C024B9C02BE2DDD8B1A440D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7553CF54C17161534F4C82DD /* ShieldCore in Frameworks */,
+				7E14DFF1976223BE96731F74 /* ShieldUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75943A1083885065A90F0B4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692DFB5D596708611CF9B20A /* ShieldCore in Frameworks */,
+				E624138B874D33CF5F02C2ED /* ShieldUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD618EADF8F562BBDC8D9637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		399AD20C469ECE25E5D160EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C31BA068C41384E1F60F2725 = {
+			isa = PBXGroup;
+			children = (
+				AE6150A1C0F1D2E3F4A5B6C7 /* Identity.xcconfig */,
+				36AAAC035D338AC1D61BA52D /* ShieldiOS */,
+				BC2F69C09CDE1E099396288D /* ShieldMac */,
+				C9E734CAA3ED861935FC8810 /* UITests */,
+				6B77614044787E4456BD7735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B77614044787E4456BD7735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				029010C643F877778D987C07 /* Family Shield.app */,
+				873028A43211F760C8307C6A /* Family Shield.app */,
+				8298CF228A625AB9C2B4D953 /* ShieldiOSUITests.xctest */,
+				E52843F6073084FEED0AC5CD /* ShieldMacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9E734CAA3ED861935FC8810 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				75994A927F349DCA0BDA963B /* ShieldiOSUITests */,
+				BD1217CCB28B59B397746823 /* ShieldMacUITests */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D0D4A5812341E1993E57E9E /* ShieldiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C559937A2F906280B62C826E /* Build configuration list for PBXNativeTarget "ShieldiOS" */;
+			buildPhases = (
+				03827ADAB7DD3D5A0CE2ED05 /* Sources */,
+				C024B9C02BE2DDD8B1A440D6 /* Frameworks */,
+				BA9A05A6129515385AD8ED11 /* Resources */,
+				76923208B850D6268607483B /* Stamp FSBuildDate */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				36AAAC035D338AC1D61BA52D /* ShieldiOS */,
+			);
+			name = ShieldiOS;
+			packageProductDependencies = (
+				34E3687501B45AB7DB793FC7 /* ShieldCore */,
+				B091893DE0F2258B932B0741 /* ShieldUI */,
+			);
+			productName = ShieldiOS;
+			productReference = 029010C643F877778D987C07 /* Family Shield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06AA307EED9EA353C8FB7B5D /* ShieldMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 226353C6B405FBF01EB7B225 /* Build configuration list for PBXNativeTarget "ShieldMac" */;
+			buildPhases = (
+				62B04EDF32BB29052DC6E02A /* Sources */,
+				75943A1083885065A90F0B4C /* Frameworks */,
+				C6F8CFDB9BF7C2993CED3E3F /* Resources */,
+				11C2EDABA1FA5731F67312A0 /* Stamp FSBuildDate */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC2F69C09CDE1E099396288D /* ShieldMac */,
+			);
+			name = ShieldMac;
+			packageProductDependencies = (
+				75C565E2FDEC965D400BF518 /* ShieldCore */,
+				3AEDD1186593E70A700BCA2C /* ShieldUI */,
+			);
+			productName = ShieldMac;
+			productReference = 873028A43211F760C8307C6A /* Family Shield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70976CA2E951D5CC7B9DE4D4 /* ShieldiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2808C8D218A0187E4D01D5 /* Build configuration list for PBXNativeTarget "ShieldiOSUITests" */;
+			buildPhases = (
+				51DA7C1A4311C995D628ACF4 /* Sources */,
+				CD618EADF8F562BBDC8D9637 /* Frameworks */,
+				130FF1EB06602E14E58B52F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1E5E43E22B81B1F23191116 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				75994A927F349DCA0BDA963B /* ShieldiOSUITests */,
+			);
+			name = ShieldiOSUITests;
+			packageProductDependencies = (
+			);
+			productName = ShieldiOSUITests;
+			productReference = 8298CF228A625AB9C2B4D953 /* ShieldiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CF524C5F864C7BA6F36642AB /* ShieldMacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C1FB627CC5AD41DFE2F9D5 /* Build configuration list for PBXNativeTarget "ShieldMacUITests" */;
+			buildPhases = (
+				7B32B8FFCCCD184052BDFBB6 /* Sources */,
+				399AD20C469ECE25E5D160EA /* Frameworks */,
+				FF71985DC6CA2C4AE404E72F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BDBD2B70CF976FBB7C340B6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BD1217CCB28B59B397746823 /* ShieldMacUITests */,
+			);
+			name = ShieldMacUITests;
+			packageProductDependencies = (
+			);
+			productName = ShieldMacUITests;
+			productReference = E52843F6073084FEED0AC5CD /* ShieldMacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C92797D8ADF320F853D54C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					1D0D4A5812341E1993E57E9E = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					06AA307EED9EA353C8FB7B5D = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					70976CA2E951D5CC7B9DE4D4 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 1D0D4A5812341E1993E57E9E;
+					};
+					CF524C5F864C7BA6F36642AB = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 06AA307EED9EA353C8FB7B5D;
+					};
+				};
+			};
+			buildConfigurationList = 425876AFD0952311A3863B73 /* Build configuration list for PBXProject "FamilyShield" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C31BA068C41384E1F60F2725;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BF7C91AC31547A8A19CD0152 /* XCLocalSwiftPackageReference "ShieldCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6B77614044787E4456BD7735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D0D4A5812341E1993E57E9E /* ShieldiOS */,
+				06AA307EED9EA353C8FB7B5D /* ShieldMac */,
+				70976CA2E951D5CC7B9DE4D4 /* ShieldiOSUITests */,
+				CF524C5F864C7BA6F36642AB /* ShieldMacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA9A05A6129515385AD8ED11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6F8CFDB9BF7C2993CED3E3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		130FF1EB06602E14E58B52F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF71985DC6CA2C4AE404E72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76923208B850D6268607483B /* Stamp FSBuildDate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Stamp FSBuildDate";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# SPEC §6.1 app_build_fresh: stamp the build day (UTC, YYYY-MM-DD) into the built Info.plist.\n# Local clock only, no network. BuildInfo.resolveBuildDay reads FSBuildDate before the\n# executable's modification date. Runs on every build so the date is always this build's.\nset -eu\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nday=\"$(/bin/date -u +%Y-%m-%d)\"\n/usr/libexec/PlistBuddy -c \"Delete :FSBuildDate\" \"$plist\" >/dev/null 2>&1 || true\n/usr/libexec/PlistBuddy -c \"Add :FSBuildDate string ${day}\" \"$plist\"\necho \"FSBuildDate ${day} -> ${plist}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11C2EDABA1FA5731F67312A0 /* Stamp FSBuildDate */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Stamp FSBuildDate";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# SPEC §6.1 app_build_fresh: stamp the build day (UTC, YYYY-MM-DD) into the built Info.plist.\n# Local clock only, no network. BuildInfo.resolveBuildDay reads FSBuildDate before the\n# executable's modification date. Runs on every build so the date is always this build's.\nset -eu\nplist=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\nday=\"$(/bin/date -u +%Y-%m-%d)\"\n/usr/libexec/PlistBuddy -c \"Delete :FSBuildDate\" \"$plist\" >/dev/null 2>&1 || true\n/usr/libexec/PlistBuddy -c \"Add :FSBuildDate string ${day}\" \"$plist\"\necho \"FSBuildDate ${day} -> ${plist}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03827ADAB7DD3D5A0CE2ED05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62B04EDF32BB29052DC6E02A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51DA7C1A4311C995D628ACF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B32B8FFCCCD184052BDFBB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1E5E43E22B81B1F23191116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D0D4A5812341E1993E57E9E /* ShieldiOS */;
+			targetProxy = CFBC14253787E9E658881A62 /* PBXContainerItemProxy */;
+		};
+		3BDBD2B70CF976FBB7C340B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06AA307EED9EA353C8FB7B5D /* ShieldMac */;
+			targetProxy = 49619BBA086726E0DE330364 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4BBF7F6B48D9318D77E12EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6150A1C0F1D2E3F4A5B6C7 /* Identity.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		599DF4E322DF737BD0E8C982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6150A1C0F1D2E3F4A5B6C7 /* Identity.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		9B08146402BBD5DBC3C07CA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldiOS/ShieldiOS.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldiOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Family Shield";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).ios";
+				PRODUCT_MODULE_NAME = ShieldiOS;
+				PRODUCT_NAME = "Family Shield";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		22492C66C7892DADBA8DCCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldiOS/ShieldiOS.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldiOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Family Shield";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).ios";
+				PRODUCT_MODULE_NAME = ShieldiOS;
+				PRODUCT_NAME = "Family Shield";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA7E17F5DF00874274992DBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldMac/ShieldMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldMac/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Family Shield";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).mac";
+				PRODUCT_MODULE_NAME = ShieldMac;
+				PRODUCT_NAME = "Family Shield";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		CFFE5A06153D36083FF9ADAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShieldMac/ShieldMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShieldMac/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Family Shield";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).mac";
+				PRODUCT_MODULE_NAME = ShieldMac;
+				PRODUCT_NAME = "Family Shield";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		9128F41C1D0D12B5D21B9489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).ios.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = ShieldiOS;
+			};
+			name = Debug;
+		};
+		7997EBBBD845695EC9AFD026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).ios.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = ShieldiOS;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55281536456D7E12C4E90777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).mac.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = ShieldMac;
+			};
+			name = Debug;
+		};
+		6F56E0A224B65E5FA9DBFA1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(FS_ID_PREFIX).mac.uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TEST_TARGET_NAME = ShieldMac;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		425876AFD0952311A3863B73 /* Build configuration list for PBXProject "FamilyShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4BBF7F6B48D9318D77E12EA /* Debug */,
+				599DF4E322DF737BD0E8C982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C559937A2F906280B62C826E /* Build configuration list for PBXNativeTarget "ShieldiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B08146402BBD5DBC3C07CA1 /* Debug */,
+				22492C66C7892DADBA8DCCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		226353C6B405FBF01EB7B225 /* Build configuration list for PBXNativeTarget "ShieldMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA7E17F5DF00874274992DBF /* Debug */,
+				CFFE5A06153D36083FF9ADAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2808C8D218A0187E4D01D5 /* Build configuration list for PBXNativeTarget "ShieldiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9128F41C1D0D12B5D21B9489 /* Debug */,
+				7997EBBBD845695EC9AFD026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C1FB627CC5AD41DFE2F9D5 /* Build configuration list for PBXNativeTarget "ShieldMacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55281536456D7E12C4E90777 /* Debug */,
+				6F56E0A224B65E5FA9DBFA1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		BF7C91AC31547A8A19CD0152 /* XCLocalSwiftPackageReference "ShieldCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ShieldCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34E3687501B45AB7DB793FC7 /* ShieldCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7C91AC31547A8A19CD0152 /* XCLocalSwiftPackageReference "ShieldCore" */;
+			productName = ShieldCore;
+		};
+		B091893DE0F2258B932B0741 /* ShieldUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7C91AC31547A8A19CD0152 /* XCLocalSwiftPackageReference "ShieldCore" */;
+			productName = ShieldUI;
+		};
+		75C565E2FDEC965D400BF518 /* ShieldCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7C91AC31547A8A19CD0152 /* XCLocalSwiftPackageReference "ShieldCore" */;
+			productName = ShieldCore;
+		};
+		3AEDD1186593E70A700BCA2C /* ShieldUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF7C91AC31547A8A19CD0152 /* XCLocalSwiftPackageReference "ShieldCore" */;
+			productName = ShieldUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C92797D8ADF320F853D54C8C /* Project object */;
+}
